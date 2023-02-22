@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div id="about" className=" bg-gradient-to-tl from-[rgba(0,0,25,0.7)] to-[rgba(75,75,255,1)] text-[#ffffff] text-center p-[40px]">
+        <div id="about" className=" bg-gradient-to-br from-[rgb(0,0,25)] to-[rgb(75,75,255)] text-[#ffffff] text-center p-[40px]">
             <p className="text-[40px]">Sobre mi</p>
             <p className="text-[20px]">
                 Hola, mi nombre es Brian Legal soy un Fullstack developer de Buenos Aires, Argentina. 
