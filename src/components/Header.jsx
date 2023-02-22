@@ -9,12 +9,12 @@ const Header = () => {
                     <img id="logoPoke" src={logoB} className="w-[70px] h-[70px]"/>
                 </Link>
                 <nav class="text-lg">
-                    <a href="#home" class="px-4 py-2 hover:text-[rgba(75,75,255,0.7)] transition duration-500">HOME</a>
-                    <a href="#about" class="px-4 py-2 hover:text-[rgba(75,75,255,0.7)] transition duration-500">ABOUT ME</a>
-                    <a href="#skills" class="px-4 py-2 hover:text-[rgba(75,75,255,0.7)] transition duration-500">SKILLS</a>
-                    <a href="#resume" class="px-4 py-2 hover:text-[rgba(75,75,255,0.7)] transition duration-500">RESUME</a>
-                    <a href="#proyects" class="px-4 py-2 hover:text-[rgba(75,75,255,0.7)] transition duration-500">PROYECTS</a>
-                    <a href="#contact" class="px-4 py-2 hover:text-[rgba(75,75,255,0.7)] transition duration-500">CONTACT</a>
+                    <a href="#home" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">HOME</a>
+                    <a href="#about" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">ABOUT ME</a>
+                    <a href="#skills" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">SKILLS</a>
+                    <a href="#resume" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">RESUME</a>
+                    <a href="#proyects" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">PROYECTS</a>
+                    <a href="#contact" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">CONTACT</a>
                 </nav>
             </div>
         </header>
