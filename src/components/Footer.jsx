@@ -1,15 +1,13 @@
+import logoB from "../images/logo-blanco.png"
+
 const Footer = () => {
     return(
-        <footer class="bg-[#232226] text-white">
-            <div class="container mx-auto py-6 flex justify-between items-center">
-                <div class="logo text-xl font-bold">
-                My Website
-                </div>
-                <div class="social-links">
-                    <a href="#" class="text-lg mr-4 hover:text-gray-500"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-lg mr-4 hover:text-gray-500"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-lg hover:text-gray-500"><i class="fab fa-instagram"></i></a>
-                </div>
+        <footer class="text-white bg-[rgba(0,0,0,1)]">
+            <div class="container mx-auto py-6 flex justify-center items-center">
+                <a href="#" className="flex flex-col justify-center items-center gap-[20px]">
+                    <img id="logoPoke" src={logoB} className="w-[180px] h-[180px]"/>
+                    <p>Brian Legal Portfolio 2023</p>
+                </a>
             </div>
         </footer>
     )
