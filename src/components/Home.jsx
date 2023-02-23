@@ -21,10 +21,10 @@ const Home = () => {
         <div className="flex flex-row justify-evenly items-center" style={estilos} id="home">
             <div className="">
                 <p className="text-[80px] text-[#ffffff] animate-bounce" style={font}>Welcome to my</p>
-                <p className="text-[80px] text-[rgba(100,100,255,1.0)] animate-bounce" style={font}>Portfolio!!!</p>
+                <p className="text-[80px] text-[rgba(75,75,255,1)] animate-bounce" style={font}>Portfolio!!!</p>
             </div>
             <div className="bg-[rgba(0,0,25,0.7)] p-[30px] m-[20px] rounded-[40px] text-[#ffffff]">
-                <img src={foto} className="h-[300px] w-[300px] rounded-full border border-[rgba(0,0,125,0.6)] border-[10px]"/>
+                <img src={foto} className="h-[300px] w-[300px] rounded-full border border-[rgba(0,0,75,1)] border-[10px]"/>
                 <p className="text-[40px] text-center mt-[20px]" style={font}>BRIAN LEGAL</p>
                 <p className="text-[20px] text-center">Full Stack Developer</p>
                 <div className="flex flex-row justify-around mt-[20px]">

@@ -3,7 +3,7 @@ import logoB from "../images/logo-blanco.png"
 
 const Header = () => {
     return(
-        <header class="text-white bg-[rgba(0,0,0,1)]">
+        <header class="text-[#ffffff] bg-[rgba(0,0,0,1)]">
             <div class="container mx-auto flex items-center justify-between py-4">
                 <Link to='/'>
                     <img id="logoPoke" src={logoB} className="w-[70px] h-[70px]"/>
