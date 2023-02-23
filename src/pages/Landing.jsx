@@ -1,11 +1,11 @@
-import Header from "./Header";
+import Header from "../components/Header";
 import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
 import Resume from "./Resume";
 import Proyects from "./Proyects";
 import Contact from "./Contact"
-import Footer from "./Footer"
+import Footer from "../components/Footer"
 
 const Landing = () => {
     return(

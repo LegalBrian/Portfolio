@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './components/Landing';
-import Page404 from './components/Page404';
+import Landing from './pages/Landing';
+import Page404 from './pages/Page404';
 
 function App() {
   return (

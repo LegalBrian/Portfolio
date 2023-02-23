@@ -1,5 +1,5 @@
-import ExperienceCard from "./ExperienceCard";
-import { education, workExperience } from "./ExperienceList";
+import ExperienceCard from "../components/ExperienceCard";
+import { education, workExperience } from "../components/lists/ExperienceList";
 
 const Resume = () => {
     return (

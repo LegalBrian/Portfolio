@@ -1,18 +1,18 @@
 import { useState } from "react";
-import { tech } from "./SkillsList";
+import SkillsCard from "./SkillsCard";
 
-const CarrucelTech = () => {
+const Carrucel = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNextSlide = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === tech.length - 1 ? tech.length - 1 : prevIndex + 1
+      prevIndex === data.length - 1 ? data.length - 1 : prevIndex + 1
     );
   };
 
   const handlePrevSlide = () => {
-      setActiveIndex((prevIndex) =>
-        prevIndex === 0 ? 0 : prevIndex - 1
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? 0 : prevIndex - 1
     );
   };
 
@@ -27,10 +27,10 @@ const CarrucelTech = () => {
           <span className="text-[40px]">&lt;</span>
         </button>
         <div className="flex items-center text-center w-[600px] justify-center">
-        {tech.map((link, index) => {
+        {data.map((link, index) => {
             const distance = Math.abs(index - activeIndex);
             let className = "hidden";
-            if (distance <= 1 || (distance === 2 && activeIndex === 0) || (distance === 2 && activeIndex === tech.length - 1)) {
+            if (distance <= 1 || (distance === 2 && activeIndex === 0) || (distance === 2 && activeIndex === data.length - 1)) {
                 className = `mx-[40px] ${
                     distance === 0 ? "opacity-100" : "opacity-50"
                 } mx-2 transform ${distance === 0 ? "scale-100" : "scale-90"}`;
@@ -39,9 +39,9 @@ const CarrucelTech = () => {
                 }
             }
             return (
-                <div key={index} className={`transition-all duration-1000 ${className}`}>
-                    {link}
-                </div>
+              <div key={index} className={`transition-all duration-1000 ${className}`}>
+                <SkillsCard svg={link.svg} text={link.text} />
+              </div>
           );
         })}
         </div>
@@ -56,4 +56,4 @@ const CarrucelTech = () => {
   );
 };
 
-export default CarrucelTech;
+export default Carrucel;
