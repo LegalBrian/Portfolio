@@ -30,13 +30,3 @@ const Resume = () => {
 }
 
 export default Resume;
-
-
-// rgba(0,0,0,1.0)
-// rgba(0,0,25,1.0)
-// rgba(0,0,50,1.0)
-// rgba(0,0,75,1.0)
-// rgba(75,75,255,1)
-// rgba(255,255,255,1.0)
-
-{/* <ExperienceCard company={""} role={""} date={""} description={""} certificate={""} /> */}
