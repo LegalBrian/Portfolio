@@ -2,13 +2,13 @@ import YouTubeVideo from "./YoutubeVideo";
 
 const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
     return(
-        <div className="w-[500px] bg-[rgba(0,0,25,1.0)] flex flex-col justify-center items-center p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px]">
+        <div className="bg-[rgba(0,0,25,1.0)] flex flex-col justify-center items-center p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px] desktop:w-[500px] smartphone:w-[300px]">
             {videoId ?
             <YouTubeVideo videoId={videoId}/>
             :
             <img 
                 src={image}
-                className="w-[450px] h-[300px]"
+                className="desktop:h-[300px] desktop:w-[460px] smartphone:h-[150px] smartphone:w-[260px]"
             /> 
             }
             <p className="text-center">{title}</p>
@@ -25,7 +25,7 @@ const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
                     })
                 }
             </div>
-            <div className="flex flex-row gap-[70px]">
+            <div className="flex desktop:flex-row justify-between smartphone:flex-col gap-[20px]">
                 <a 
                     href={repo} target="_blank"
                     className="flex flex-row text-center items-center mt-[10px] bg-[rgba(0,0,0,1)] justify-center w-[140px] p-[5px] rounded-[30px] border-[2px] border-[rgba(255,255,255,1)] hover:bg-[rgba(75,75,255,1)] transition duration-500"
