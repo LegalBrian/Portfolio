@@ -1,4 +1,4 @@
-const ProyectsCard = ({title, image, repo, deploy}) => {
+const ProjectsCard = ({title, image, repo, deploy}) => {
     return(
         <div className="w-[500px] bg-[rgba(0,0,25,1.0)] flex flex-col justify-center items-center p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px]">
             <img 
@@ -34,7 +34,7 @@ const ProyectsCard = ({title, image, repo, deploy}) => {
     )
 }
 
-export default ProyectsCard;
+export default ProjectsCard;
 
 
 // rgba(0,0,0,1.0)

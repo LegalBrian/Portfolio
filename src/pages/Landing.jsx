@@ -3,7 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
 import Resume from "./Resume";
-import Proyects from "./Proyects";
+import Projects from "./Projects";
 import Contact from "./Contact"
 import Footer from "../components/Footer"
 
@@ -15,7 +15,7 @@ const Landing = () => {
             <About/>
             <Skills/>
             <Resume/>
-            <Proyects/>
+            <Projects/>
             <Contact/>
             <Footer/>
         </div>

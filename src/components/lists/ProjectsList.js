@@ -1,4 +1,4 @@
-export const proyects = [
+export const projects = [
     {
         title: "Find a Home", 
         image: "", 
