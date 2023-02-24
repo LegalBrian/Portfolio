@@ -1,11 +1,30 @@
-const ProjectsCard = ({title, image, repo, deploy}) => {
+import YouTubeVideo from "./YoutubeVideo";
+
+const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
     return(
         <div className="w-[500px] bg-[rgba(0,0,25,1.0)] flex flex-col justify-center items-center p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px]">
+            {videoId ?
+            <YouTubeVideo videoId={videoId}/>
+            :
             <img 
-                src={image? image : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}
+                src={image}
                 className="w-[450px] h-[300px]"
-            />
+            /> 
+            }
             <p className="text-center">{title}</p>
+            <div className="flex flex-wrap justify-center gap-[20px]">
+                {technologies.map(ele => {
+                    return(
+                        <div className='flex flex-col items-center justify-center h-[60px] w-[80px]'>
+                            <svg fill="#ffffff" className="w-[60px] h-[60px]" viewBox="0 0 128 128">
+                                {ele.svg}
+                            </svg>
+                            <p className='text-[10px] text-center'>{ele.text}</p>
+                        </div>
+                        )
+                    })
+                }
+            </div>
             <div className="flex flex-row gap-[70px]">
                 <a 
                     href={repo} target="_blank"
@@ -35,11 +54,3 @@ const ProjectsCard = ({title, image, repo, deploy}) => {
 }
 
 export default ProjectsCard;
-
-
-// rgba(0,0,0,1.0)
-// rgba(0,0,25,1.0)
-// rgba(0,0,50,1.0)
-// rgba(0,0,75,1.0)
-// rgba(75,75,255,1)
-// rgba(255,255,255,1.0)

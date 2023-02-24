@@ -13,7 +13,7 @@ const Header = () => {
                     <a href="#about" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">ABOUT ME</a>
                     <a href="#skills" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">SKILLS</a>
                     <a href="#resume" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">RESUME</a>
-                    <a href="#proyects" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">PROYECTS</a>
+                    <a href="#projects" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">PROJECTS</a>
                     <a href="#contact" class="px-4 py-2 hover:text-[rgba(75,75,255,1)] transition duration-500">CONTACT</a>
                 </nav>
             </div>

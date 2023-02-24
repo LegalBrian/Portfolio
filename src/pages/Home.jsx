@@ -3,6 +3,8 @@ import inicioBg from '../images/Inicio-bg.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Home = () => {
 
@@ -30,6 +32,8 @@ const Home = () => {
                 <div className="flex flex-row justify-around mt-[20px]">
                     <a href="https://www.linkedin.com/in/legal-brian/" target="_blank" className="flex justify-center items-center text-[#ffffff] text-[27px] w-[50px] h-[50px] bg-[rgba(0,0,0,0.7)] rounded-full border-[#ffffff] border-[2px] hover:bg-[rgba(75,75,255,1)] transition duration-500"><FontAwesomeIcon icon={faLinkedin} /></a>
                     <a href="https://github.com/LegalBrian" target="_blank" className="flex justify-center items-center text-[#ffffff] text-[27px] w-[50px] h-[50px] bg-[rgba(0,0,0,0.7)] rounded-full border-[#ffffff] border-[2px] hover:bg-[rgba(75,75,255,1)] transition duration-500"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href="mailto:brianlegal11@gmail.com" target="_blank" className="flex justify-center items-center text-[#ffffff] text-[27px] w-[50px] h-[50px] bg-[rgba(0,0,0,0.7)] rounded-full border-[#ffffff] border-[2px] hover:bg-[rgba(75,75,255,1)] transition duration-500"><FontAwesomeIcon icon={faEnvelope} /></a>
+                    <a href="https://wa.me/541136853167" target="_blank" className="flex justify-center items-center text-[#ffffff] text-[27px] w-[50px] h-[50px] bg-[rgba(0,0,0,0.7)] rounded-full border-[#ffffff] border-[2px] hover:bg-[rgba(75,75,255,1)] transition duration-500"><FontAwesomeIcon icon={faWhatsapp} /></a>
                 </div>
             </div>
         </div>
