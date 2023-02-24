@@ -1,6 +1,6 @@
 const ProyectsCard = ({title, image, repo, deploy}) => {
     return(
-        <div className="w-[500px] bg-[rgba(0,0,25,1.0)] flex flex-col justify-center items-center p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] m-[20px]">
+        <div className="w-[500px] bg-[rgba(0,0,25,1.0)] flex flex-col justify-center items-center p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px]">
             <img 
                 src={image? image : "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"}
                 className="w-[450px] h-[300px]"
