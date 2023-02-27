@@ -1,20 +1,29 @@
 import logoB from "../images/logo-blanco.png"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    }, [menuOpen]);
+
     return(
-        <header class="text-white bg-black">
-            <div class="container mx-auto flex items-center justify-between py-4">
+        <header className="text-white bg-black">
+            <div className="container mx-auto flex items-center justify-between p-[5px]">
                 <a href="/">
-                    <img src={logoB} class="w-16 h-16" alt="Logo" />
+                    <img src={logoB} className="w-16 h-16" alt="Logo" />
                 </a>
-                <button className="block border border-gray-600 px-3 py-2 rounded text-gray-600 hover:text-gray-800 focus:outline-none desktop:hidden" onClick={toggleMenu}>
+                <button className={`border border-gray-600 px-3 py-2 rounded text-gray-600 hover:text-gray-800 focus:outline-none desktop:hidden ${menuOpen ? '' : ''}`} onClick={toggleMenu}>
                     <span className="sr-only">Menú</span>
                     <svg className="w-6 h-6 fill-[#ffffff]" viewBox="0 0 24 24">
                         <rect x="4" y="5" width="16" height="2" />
@@ -22,15 +31,13 @@ const Header = () => {
                         <rect x="4" y="17" width="16" height="2" />
                     </svg>
                 </button>
-                <nav className={`${menuOpen ? "block" : "hidden"} desktop:hidden`}>
-                </nav>
-                <nav class="text-lg">
-                    <a href={"/" + "#home"} class="px-4 py-2 hover:text-blue-500 transition duration-500">HOME</a>
-                    <a href={"/" + "#about"} class="px-4 py-2 hover:text-blue-500 transition duration-500">ABOUT ME</a>
-                    <a href={"/" + "#skills"} class="px-4 py-2 hover:text-blue-500 transition duration-500">SKILLS</a>
-                    <a href={"/" + "#resume"} class="px-4 py-2 hover:text-blue-500 transition duration-500">RESUME</a>
-                    <a href={"/" + "#projects"} class="px-4 py-2 hover:text-blue-500 transition duration-500">PROJECTS</a>
-                    <a href={"/" + "#contact"} class="px-4 py-2 hover:text-blue-500 transition duration-500">CONTACT</a>
+                <nav className={`text-lg desktop:block ${menuOpen ? 'fixed inset-0 bg-black z-50 text-white flex flex-col justify-center items-center w-screen gap-[20px]' : 'hidden'}`}>
+                    <a href={"/" + "#home"} onClick={toggleMenu} className="px-4 py-2 hover:text-blue-500 transition duration-500">HOME</a>
+                    <a href={"/" + "#about"} onClick={toggleMenu} className="px-4 py-2 hover:text-blue-500 transition duration-500">ABOUT ME</a>
+                    <a href={"/" + "#skills"} onClick={toggleMenu} className="px-4 py-2 hover:text-blue-500 transition duration-500">SKILLS</a>
+                    <a href={"/" + "#resume"} onClick={toggleMenu} className="px-4 py-2 hover:text-blue-500 transition duration-500">RESUME</a>
+                    <a href={"/" + "#projects"} onClick={toggleMenu} className="px-4 py-2 hover:text-blue-500 transition duration-500">PROJECTS</a>
+                    <a href={"/" + "#contact"} onClick={toggleMenu} className="px-4 py-2 hover:text-blue-500 transition duration-500">CONTACT</a>
                 </nav>
             </div>
         </header>
