@@ -1,3 +1,10 @@
+import bg404 from "../images/404-bg.gif"
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Header
+
+
+
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Carrucel
 
@@ -62,3 +69,29 @@ export const youtubeVideoContainer = "flex justify-center items-center desktop:h
 export const youtubeVideoButton = "bg-[rgba(0,0,50,1.0)] px-[20px] rounded-[20px] hover:bg-[rgba(75,75,255,1)] transition duration-500";
 
 export const youtubeVideoButtonSvg = "w-[60px] text-[#ffffff]";
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Footer
+
+export const footerContainer = "flex justify-center items-center py-6 text-white bg-[rgba(0,0,0,1)]";
+
+export const footerButton = "flex flex-col justify-center items-center gap-[20px]";
+
+export const footerButtonImage = "desktop:w-[180px] desktop:h-[180px] smartphone:w-[90px] smartphone:h-[90px]";
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// Error404
+
+export const error404Background = {
+    backgroundImage: `linear-gradient(to top, rgba(150,0,0,0.3), rgba(75,0,0,0.6), rgba(0,0,0,0.9)), url(${bg404})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+};
+
+export const error404Container = "flex flex-col items-center justify-center h-screen";
+
+export const error404Title1 = " text-[#ffffff] animate-pulse text-center desktop:text-[80px] smartphone:text-[50px]";
+
+export const error404Title2 = "text-[rgba(255,75,75,1)] animate-pulse text-center desktop:text-[80px] smartphone:text-[50px]"
+
