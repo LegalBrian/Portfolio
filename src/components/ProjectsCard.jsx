@@ -1,34 +1,35 @@
+import { projectCardContainer, projectCardImage, projectCardTitle, projectCardTechnologiesContainer, projectCardTechnologies, projectCardTechnologiesSvg, projectCardTechnologiesText, projectCardButtonsContainer, projectCardButton } from "./styleComponents";
 import YouTubeVideo from "./YoutubeVideo";
 
 const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
     return(
-        <div className="bg-[rgba(0,0,25,1.0)] flex flex-col justify-center items-center p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px] desktop:w-[500px] smartphone:w-[300px]">
+        <div className={projectCardContainer}>
             {videoId ?
             <YouTubeVideo videoId={videoId}/>
             :
             <img 
                 src={image}
-                className="desktop:h-[300px] desktop:w-[460px] smartphone:h-[150px] smartphone:w-[260px]"
+                className={projectCardImage}
             /> 
             }
-            <p className="text-center">{title}</p>
-            <div className="flex flex-wrap justify-center gap-[20px]">
+            <p className={projectCardTitle}>{title}</p>
+            <div className={projectCardTechnologiesContainer}>
                 {technologies.map(ele => {
                     return(
-                        <div className='flex flex-col items-center justify-center h-[60px] w-[80px]'>
-                            <svg fill="#ffffff" className="w-[60px] h-[60px]" viewBox="0 0 128 128">
+                        <div className={projectCardTechnologies}>
+                            <svg fill="#ffffff" className={projectCardTechnologiesSvg} viewBox="0 0 128 128">
                                 {ele.svg}
                             </svg>
-                            <p className='text-[10px] text-center'>{ele.text}</p>
+                            <p className={projectCardTechnologiesText}>{ele.text}</p>
                         </div>
                         )
                     })
                 }
             </div>
-            <div className="flex desktop:flex-row justify-between smartphone:flex-col gap-[20px]">
+            <div className={projectCardButtonsContainer}>
                 <a 
                     href={repo} target="_blank"
-                    className="flex flex-row text-center items-center mt-[10px] bg-[rgba(0,0,0,1)] justify-center w-[140px] p-[5px] rounded-[30px] border-[2px] border-[rgba(255,255,255,1)] hover:bg-[rgba(75,75,255,1)] transition duration-500"
+                    className={projectCardButton}
                 >
                     <text>Repositorio</text>
                     <svg xmlns={"http://www.w3.org/2000/svg"} viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
@@ -38,7 +39,7 @@ const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
                 {deploy?
                 <a 
                     href={deploy}   target="_blank"
-                    className="flex flex-row text-center items-center mt-[10px] bg-[rgba(0,0,0,1)] justify-center w-[140px] p-[5px] rounded-[30px] border-[2px] border-[rgba(255,255,255,1)] hover:bg-[rgba(75,75,255,1)] transition duration-500"
+                    className={projectCardButton}
                 >
 
                     <text>Deploy</text>
