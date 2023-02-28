@@ -59,7 +59,7 @@ export const projectCardContainer = "flex flex-col justify-center items-center b
 
 export const projectCardImage = "desktop:h-[300px] desktop:w-[460px] smartphone:h-[150px] smartphone:w-[260px] smartphone-r:h-[150px] smartphone-r:w-[260px]";
 
-export const projectCardTitle = "text-center";
+export const projectCardTitle = "text-center text-[rgba(75,75,255,1)] text-[25px]";
 
 export const projectCardTechnologiesContainer = "flex flex-wrap justify-center gap-[20px]";
 
