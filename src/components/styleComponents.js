@@ -8,7 +8,7 @@ import bg404 from "../images/404-bg.gif"
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Carrucel
 
-export const carrucelContainer = "flex flex-row justify-evenly items-center text-white w-screen p-[5px]";
+export const carrucelContainer = "flex flex-row justify-evenly items-center text-white p-[5px]";
 
 export const carrucelButton = "flex justify-center items-center text-[20px] w-[30px] h-[30px] bg-[rgba(0,0,0,0.7)] rounded-full border-[2px] border-[#ffffff] hover:bg-[rgba(75,75,255,1)] duration-500 ";
 
