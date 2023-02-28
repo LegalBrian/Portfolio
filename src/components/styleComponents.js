@@ -3,7 +3,19 @@ import bg404 from "../images/404-bg.gif"
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Header
 
+export const headerContainer = "flex items-center justify-between p-[5px] bg-[rgba(0,0,0,1)] text-[#ffffff]";
 
+export const headerButtonMenu = "border border-gray-600 px-3 py-2 rounded text-gray-600 hover:text-gray-800 focus:outline-none desktop:hidden laptop:hidden tablet:hidden"
+
+export const headerButtonMenuSvg = "w-6 h-6 fill-[#ffffff]";
+
+export const headerNav = "text-lg desktop:block laptop:block tablet:block"
+
+export const headerNavOpen = "fixed inset-0 bg-black z-50 text-white flex flex-col justify-center items-center w-screen gap-[20px]";
+
+export const headerNavClosed = "hidden";
+
+export const headerNavOption = "px-4 py-2 hover:text-blue-500 transition duration-500";
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Carrucel
@@ -94,4 +106,3 @@ export const error404Container = "flex flex-col items-center justify-center h-sc
 export const error404Title1 = " text-[#ffffff] animate-pulse text-center desktop:text-[80px] smartphone:text-[50px]";
 
 export const error404Title2 = "text-[rgba(255,75,75,1)] animate-pulse text-center desktop:text-[80px] smartphone:text-[50px]"
-
