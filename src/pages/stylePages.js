@@ -53,9 +53,9 @@ export const resumeTitle = "desktop:text-[40px] smartphone:text-[30px]";
 
 export const resumeSubContainer = "desktop:grid grid-cols-2 justify-items-center desktop:gap-x-[100px] smartphone:flex flex-col tablet:grid grid-cols-2 justify-items-center tablet:gap-x-[50px] laptop:gap-x-[0px]";
 
-export const resumeExperience = "flex flex-col gap-[10px]"
+export const resumeExperience = "flex flex-col gap-[10px] mt-[10px]"
 
-export const resumeSubTitle = "text-[20px] text-center w-[500px]";
+export const resumeSubTitle = "text-[20px] text-center";
 
 export const resumeExperienceCardContainer = "flex flex-col justify-center items-center gap-[20px]";
 
