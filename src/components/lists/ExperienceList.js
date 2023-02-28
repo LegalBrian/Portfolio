@@ -12,8 +12,8 @@ export const workExperience = [
     {
         company: "Henry",
         role: "React Native Developer",
-        date: "ene 2023 - feb 2023",
-        description: 'Develop together with a group of people a mobile application aimed at an NGO called "Find a Home" that aims to facilitate the adoption of animals in search of a home.',
+        date: "jan 2023 - feb 2023",
+        description: 'Developed together with a group of people a mobile application aimed at an NGO called "Find a Home" that aims to facilitate the adoption of animals in search of a home.',
         certificate: null,
     }
 ]
