@@ -19,7 +19,7 @@ const Header = () => {
 
     return(
         <header className="text-white bg-black">
-            <div className="container mx-auto flex items-center justify-between p-[5px]">
+            <div className="container mx-auto flex items-center justify-between py-[5px]">
                 <a href="/">
                     <img src={logoB} className="w-16 h-16" alt="Logo" />
                 </a>
@@ -31,7 +31,7 @@ const Header = () => {
                         <rect x="4" y="17" width="16" height="2" />
                     </svg>
                 </button>
-                <nav className={`text-lg desktop:block laptop:block tablet:block ${menuOpen ? 'fixed inset-0 bg-black z-50 text-white flex flex-col justify-center items-center w-screen h-screen gap-[20px]' : 'hidden'}`}>
+                <nav className={`text-lg desktop:block laptop:block tablet:block ${menuOpen ? 'fixed inset-0 bg-black z-50 text-white flex flex-col justify-center items-center w-screen gap-[20px]' : 'hidden'}`}>
                     <a href={"/" + "#home"} onClick={() => setMenuOpen(false)} className="px-4 py-2 hover:text-blue-500 transition duration-500">HOME</a>
                     <a href={"/" + "#about"} onClick={() => setMenuOpen(false)} className="px-4 py-2 hover:text-blue-500 transition duration-500">ABOUT ME</a>
                     <a href={"/" + "#skills"} onClick={() => setMenuOpen(false)} className="px-4 py-2 hover:text-blue-500 transition duration-500">SKILLS</a>
