@@ -8,27 +8,27 @@ import bg404 from "../images/404-bg.gif"
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Carrucel
 
-export const carrucelContainer = "flex flex-row justify-center items-center my-[20px] text-white";
+export const carrucelContainer = "flex flex-row justify-evenly items-center text-white w-screen p-[5px]";
 
-export const carrucelButton = "flex justify-center items-center bg-[rgba(0,0,0,0.7)] rounded-full border-[2px] border-[#ffffff] hover:bg-[rgba(75,75,255,1)] duration-500 desktop:text-[25px] desktop:w-[50px] desktop:h-[50px] smartphone:text-[20px] smartphone:w-[30px] smartphone:h-[30px]";
+export const carrucelButton = "flex justify-center items-center text-[20px] w-[30px] h-[30px] bg-[rgba(0,0,0,0.7)] rounded-full border-[2px] border-[#ffffff] hover:bg-[rgba(75,75,255,1)] duration-500 ";
 
-export const carrucelButtonText = "desktop:text-[40px] smartphone:text-[20px]";
+export const carrucelButtonText = "text-center text-[20px]";
 
-export const carrucelItems = "flex items-center text-center justify-center desktop:w-[600px] smartphone:w-[230px]";
+export const carrucelItems = "flex items-center text-center justify-center";
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 // SkillsCard
 
-export const skillsCardContainer = "flex flex-col items-center justify-center desktop:h-[120px] desktop:w-[140px] smartphone:h-[80px] smartphone:w-[80px]";
+export const skillsCardContainer = "flex flex-col items-center justify-center desktop:h-[140px] desktop:w-[140px] smartphone:h-[80px] smartphone:w-[80px] smartphone-r:h-[90px] smartphone-r:w-[100px] tablet:h-[120px] tablet:w-[130px]";
 
-export const skillsCardSvg = "desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px]";
+export const skillsCardSvg = "desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]";
 
-export const skillsCardText = "text-center desktop:text-[20px] smartphone:text-[12px]";
+export const skillsCardText = "text-center desktop:text-[20px] smartphone:text-[12px] smartphone-r:text-[15px] tablet:text-[20px]";
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 // ExperienceCard
 
-export const experienceCardContainer = "flex flex-col bg-[rgba(0,0,50,1.0)] p-[30px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[5px] desktop:w-[500px] smartphone:w-[300px]";
+export const experienceCardContainer = "flex flex-col bg-[rgba(0,0,50,1.0)] p-[30px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[5px] desktop:w-[500px] smartphone:w-[300px] smartphone-r:w-[460px] tablet:w-[300px]";
 
 export const experienceCardCompany = "text-start text-[rgba(255,255,255,1)] text-[20px]";
 
@@ -43,9 +43,9 @@ export const experienceCardCertificate = "flex flex-row justify-center text-cent
 //----------------------------------------------------------------------------------------------------------------------------------------
 // ProjectCard
 
-export const projectCardContainer = "flex flex-col justify-center items-center bg-[rgba(0,0,25,1.0)] p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px] desktop:w-[500px] smartphone:w-[300px]";
+export const projectCardContainer = "flex flex-col justify-center items-center bg-[rgba(0,0,25,1.0)] p-[20px] border-r-[4px] border-b-[4px] border-[rgba(75,75,255,1)] rounded-[10px] gap-[20px] my-[20px] desktop:w-[500px] smartphone:w-[300px] smartphone-r:w-[460px] tablet:w-[300px]";
 
-export const projectCardImage = "desktop:h-[300px] desktop:w-[460px] smartphone:h-[150px] smartphone:w-[260px]";
+export const projectCardImage = "desktop:h-[300px] desktop:w-[460px] smartphone:h-[150px] smartphone:w-[260px] smartphone-r:h-[150px] smartphone-r:w-[260px]";
 
 export const projectCardTitle = "text-center";
 

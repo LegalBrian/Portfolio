@@ -51,7 +51,7 @@ export const resumeContainer = "flex flex-col items-center text-center bg-[rgba(
 
 export const resumeTitle = "desktop:text-[40px] smartphone:text-[30px]";
 
-export const resumeSubContainer = "w-full desktop:grid grid-cols-2 justify-items-center smartphone:flex flex-col items-center gap-[20px]";
+export const resumeSubContainer = "desktop:grid grid-cols-2 justify-items-center desktop:gap-x-[100px] smartphone:flex flex-col tablet:grid grid-cols-2 justify-items-center tablet:gap-x-[50px] laptop:gap-x-[0px]";
 
 export const resumeExperience = "flex flex-col gap-[10px]"
 
@@ -68,7 +68,7 @@ export const projectsContainer = "flex flex-col text-center items-center bg-[rgb
 
 export const projectsTitle = "desktop:text-[40px] smartphone:text-[30px]";
 
-export const projectsListContainer = "desktop:grid grid-cols-2 justify-items-center desktop:gap-[50px] smartphone:flex flex-col";
+export const projectsListContainer = "desktop:grid grid-cols-2 justify-items-center desktop:gap-x-[100px] smartphone:flex flex-col tablet:grid grid-cols-2 justify-items-center tablet:gap-x-[50px] laptop:gap-x-[100px]";
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Contact
