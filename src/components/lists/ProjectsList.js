@@ -38,7 +38,7 @@ export const projects = [
     },
     {
         title: "Pokedex", 
-        image: "https://raw.githubusercontent.com/LegalBrian/Pokemon-PI/d2ae3d92c9b462bfb81ff8857a5c5c4412e29427/client/src/images/logo-blanco.png",
+        image: "https://raw.githubusercontent.com/LegalBrian/Portfolio/main/src/images/Pokedex.png",
         videoId: null,
         repo: "https://github.com/LegalBrian/Pokemon-PI", 
         deploy: "",
