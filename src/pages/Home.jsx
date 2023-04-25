@@ -25,7 +25,7 @@ const Home = () => {
                     <a href="https://github.com/LegalBrian" target="_blank" className={homeCardContactButton}>
                         <FontAwesomeIcon icon={faGithub}/>
                     </a>
-                    <a href="mailto:legal.brian@outlook.com" target="_blank" className={homeCardContactButton}>
+                    <a href="mailto:legalbriandev@gmail.com" target="_blank" className={homeCardContactButton}>
                         <FontAwesomeIcon icon={faEnvelope}/>
                     </a>
                     <a href="https://wa.me/541136853167" target="_blank" className={homeCardContactButton}>
