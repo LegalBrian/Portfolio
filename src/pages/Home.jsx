@@ -17,7 +17,7 @@ const Home = () => {
             <div className={homeCardContainer}>
                 <img src={foto} className={homeCardImage}/>
                 <p className={homeCardName} style={font}>BRIAN LEGAL</p>
-                <p className={homeCardTitle}>Full Stack Developer</p>
+                <p className={homeCardTitle}>Full Stack Web Developer</p>
                 <div className={homeCardContactContainer}>
                     <a href="https://www.linkedin.com/in/legal-brian/" target="_blank" className={homeCardContactButton}>
                         <FontAwesomeIcon icon={faLinkedin}/>
