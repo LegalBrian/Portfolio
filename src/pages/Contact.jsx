@@ -21,7 +21,7 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faGithub} />
                     <p className='text-[15px]'>Github</p>
                 </a>
-                <a href="mailto:legal.brian@outlook.com" target="_blank" className={contactButton}>
+                <a href="mailto:legalbriandev@gmail.com" target="_blank" className={contactButton}>
                     <FontAwesomeIcon icon={faEnvelope} />
                     <p className='text-[15px]'>Email</p>
                 </a>
