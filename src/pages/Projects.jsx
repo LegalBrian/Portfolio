@@ -7,12 +7,11 @@ const Projects = () => {
         <div id="projects" className={projectsContainer}>
             <p className={projectsTitle}>Projects</p>
             <div className={projectsListContainer}>
-                {projects.map(ele => {
-                    return(
-                        <ProjectsCard title={ele.title} image={ele.image} videoId={ele.videoId} repo={ele.repo} deploy={ele.deploy} technologies={ele.technologies} />
+                {projects.map((ele, index) => {
+                    return (
+                        <ProjectsCard key={index} title={ele.title} image={ele.image} videoId={ele.videoId} repo={ele.repo} deploy={ele.deploy} technologies={ele.technologies} />
                     )
-                    })
-                }
+                })}
             </div>
         </div>
     )
