@@ -59,11 +59,11 @@ const Header = () => {
                 </a>
             </nav>
             <div className={headerLangs}>
-                    <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? "opacity-100" : "opacity-50"}`}>
+                    <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]" : "opacity-25"}`}>
                         <Spain width="27" height="27"/>
                     </a>
 
-                    <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? "opacity-100" : "opacity-50"}`}>
+                    <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]" : "opacity-25"}`}>
                         <USA width="27" height="27"/>
                     </a>
                 </div>
