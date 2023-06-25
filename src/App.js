@@ -4,12 +4,12 @@ import Page404 from './pages/Page404';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/*" element={<Page404 />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/*" element={<Page404 />} />
+        </Routes>
+      </Router>
   );
 }
 

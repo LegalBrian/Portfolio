@@ -1,8 +1,12 @@
 import logoB from "../images/logo-blanco.png"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { headerButtonMenu, headerButtonMenuSvg, headerContainer, headerNav, headerNavClosed, headerNavOpen, headerNavOption } from "./styleComponents";
+import { FormattedMessage } from "react-intl";
+import { langContext } from "../context/langContext";
 
 const Header = () => {
+
+    const lang = useContext(langContext);
 
     const [menuOpen, setMenuOpen] = useState(false);
     
@@ -32,12 +36,26 @@ const Header = () => {
                 </svg>
             </button>
             <nav className={`${headerNav} ${menuOpen ? headerNavOpen : headerNavClosed}`}>
-                <a href={"/" + "#home"} onClick={() => setMenuOpen(false)} className={headerNavOption}>HOME</a>
-                <a href={"/" + "#about"} onClick={() => setMenuOpen(false)} className={headerNavOption}>ABOUT ME</a>
-                <a href={"/" + "#skills"} onClick={() => setMenuOpen(false)} className={headerNavOption}>SKILLS</a>
-                <a href={"/" + "#resume"} onClick={() => setMenuOpen(false)} className={headerNavOption}>RESUME</a>
-                <a href={"/" + "#projects"} onClick={() => setMenuOpen(false)} className={headerNavOption}>PROJECTS</a>
-                <a href={"/" + "#contact"} onClick={() => setMenuOpen(false)} className={headerNavOption}>CONTACT</a>
+                <a href={"/" + "#home"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
+                    <FormattedMessage id="header.home" defaultMessage="INICIO" />
+                </a>
+                <a href={"/" + "#about"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
+                    <FormattedMessage id="header.about" defaultMessage="SOBRE MÍ" />
+                </a>
+                <a href={"/" + "#skills"} onClick={() => setMenuOpen(false)} className={headerNavOption}>                    
+                    <FormattedMessage id="header.skills" defaultMessage="HABILIDADES" />
+                </a>
+                <a href={"/" + "#resume"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
+                    <FormattedMessage id="header.resume" defaultMessage="CURRICULUM" />
+                </a>
+                <a href={"/" + "#projects"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
+                    <FormattedMessage id="header.projects" defaultMessage="PROYECTOS" />
+                </a>
+                <a href={"/" + "#contact"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
+                    <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
+                </a>
+                <a onClick={() => lang.setLang("es-AR")} className={headerNavOption}>E</a>
+                <a onClick={() => lang.setLang("en-US")} className={headerNavOption}>I</a>
             </nav>
         </header>
     )
