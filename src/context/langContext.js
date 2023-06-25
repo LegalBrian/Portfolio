@@ -7,7 +7,7 @@ const langContext = React.createContext();
 
 const LangProvider = ({ children }) => {
     const [ messages, setMessages ] = useState(MessagesSpanish);
-    const [ locale, setLocale ] = useState('en-US')
+    const [ locale, setLocale ] = useState('es-AR')
     
     const setLang = (lang) => {
         switch(lang){
@@ -25,7 +25,7 @@ const LangProvider = ({ children }) => {
         }
     }
     return (
-        <langContext.Provider value={{setLang: setLang}}>
+        <langContext.Provider value={{setLang: setLang, currentLang: locale}}>
             <IntlProvider locale={locale} messages={messages}>
                 {children}
             </IntlProvider>

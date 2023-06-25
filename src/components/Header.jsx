@@ -1,8 +1,10 @@
 import logoB from "../images/logo-blanco.png"
 import { useState, useEffect, useContext } from "react";
-import { headerButtonMenu, headerButtonMenuSvg, headerContainer, headerNav, headerNavClosed, headerNavOpen, headerNavOption } from "./styleComponents";
+import { headerButtonMenu, headerButtonMenuSvg, headerContainer, headerLangs, headerNav, headerNavClosed, headerNavOpen, headerNavOption } from "./styleComponents";
 import { FormattedMessage } from "react-intl";
 import { langContext } from "../context/langContext";
+import { ReactComponent as Spain } from '../images/Spain.svg';
+import { ReactComponent as USA } from '../images/USA.svg';
 
 const Header = () => {
 
@@ -35,6 +37,7 @@ const Header = () => {
                     <rect x="4" y="17" width="16" height="2" />
                 </svg>
             </button>
+
             <nav className={`${headerNav} ${menuOpen ? headerNavOpen : headerNavClosed}`}>
                 <a href={"/" + "#home"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
                     <FormattedMessage id="header.home" defaultMessage="INICIO" />
@@ -54,9 +57,16 @@ const Header = () => {
                 <a href={"/" + "#contact"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
                     <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
                 </a>
-                <a onClick={() => lang.setLang("es-AR")} className={headerNavOption}>E</a>
-                <a onClick={() => lang.setLang("en-US")} className={headerNavOption}>I</a>
             </nav>
+            <div className={headerLangs}>
+                    <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? "opacity-100" : "opacity-50"}`}>
+                        <Spain width="27" height="27"/>
+                    </a>
+
+                    <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? "opacity-100" : "opacity-50"}`}>
+                        <USA width="27" height="27"/>
+                    </a>
+                </div>
         </header>
     )
 }

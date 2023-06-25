@@ -5,7 +5,28 @@
     "header.resume": "CURRICULUM",
     "header.projects": "PROYECTOS",
     "header.contact": "CONTACTO",
+
+    "error404.title1": "Error 404:",
+    "error404.title2": "Página no encontrada!",
+
+    "experienceCard.button": "Certificado",
     
+    "projectcard.buttonRepository": "Repositorio",
+    "projectcard.buttonDeploy": "Deploy",
+
     "about.title": "Sobre Mí",
-    "about.description": "Hola, mi nombre es Brian Legal y soy un Desarrollador Web Full Stack de Buenos Aires, Argentina. Me considero un desarrollador apasionado que está en constante aprendizaje, me encantan los proyectos desafiantes y siempre busco oportunidades para expandir mis habilidades y conocimientos. En mi tiempo libre, disfruto explorar nuevas tecnologías, ya que realmente me fascinan. Puedo afirmar con seguridad que estoy listo para aprender y crecer como desarrollador, así como para enfrentar cualquier desafío que se presente."
+    "about.description": "Hola, mi nombre es Brian Legal y soy un Full Stack Web Developer de Buenos Aires, Argentina. Me considero un desarrollador apasionado que está en constante aprendizaje, me encantan los proyectos desafiantes y siempre busco oportunidades para expandir mis habilidades y conocimientos. En mi tiempo libre, disfruto explorar nuevas tecnologías, ya que realmente me fascinan. Puedo afirmar con seguridad que estoy listo para aprender y crecer como desarrollador, así como para enfrentar cualquier desafío que se presente.",
+
+    "contact.title": "Contacto",
+    "contact.description": "Si estás interesado en mi trabajo y te gustaría discutir una posible colaboración, no dudes en visitar mis perfiles profesionales en LinkedIn y GitHub para obtener más información sobre mi experiencia y habilidades. También puedes contactarme por correo electrónico o WhatsApp para hablar sobre un proyecto o una oportunidad laboral. ¡Espero tener noticias tuyas pronto y trabajar juntos en el futuro!",
+
+    "projects.title": "Proyectos",
+
+    "resume.title": "Curriculum",
+    "resume.education": "Educación",
+    "resume.workExperience": "Experiencia Laboral",
+    "resume.button": "Descargar Curriculum",
+
+    "skills.title": "Habilidades",
+    "skills.tech": "Habilidades Técnicas"
 }

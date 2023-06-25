@@ -17,6 +17,8 @@ export const headerNavClosed = "hidden";
 
 export const headerNavOption = "px-4 py-2 hover:text-blue-500 transition duration-500";
 
+export const headerLangs = "flex items-center gap-3";
+
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Carrucel
 
