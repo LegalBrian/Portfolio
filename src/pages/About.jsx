@@ -1,13 +1,26 @@
 import { aboutContainer, aboutTitle, aboutDescription } from "./stylePages";
+import { IntlProvider, FormattedMessage } from 'react-intl';
+import MensajesIngles from "../lang/en-US.json";
+import MensajesEspañol from "../lang/es-AR.json";
 
 const About = () => {
     return (
-        <div id="about" className={aboutContainer}>
-            <p className={aboutTitle}>About me</p>
-            <p className={aboutDescription}>
-            Hi, my name is Brian Legal and I am a Full Stack Web Developer from Buenos Aires, Argentina. I think of myself as a passionate developer who is constantly learning, loves challenging projects, and is always looking for opportunities to expand their skills and knowledge. In my free time, I enjoy exploring new technologies, as I am truly fascinated by them. I can say for sure that I am ready to learn and grow as a developer, as well as to face any challenge that lies ahead.
-            </p>
-        </div>
+        <IntlProvider locale="en-US" messages={MensajesEspañol}>
+            <div id="about" className={aboutContainer}>
+                <p className={aboutTitle}>
+                    <FormattedMessage 
+                        id="about.title" 
+                        defaultMessage="Sobre Mi" 
+                    />
+                </p>
+                <p className={aboutDescription}>
+                    <FormattedMessage 
+                        id="about.description"
+                        defaultMessage="Hola, mi nombre es Brian Legal y soy un Desarrollador Web Full Stack de Buenos Aires, Argentina. Me considero un desarrollador apasionado que está en constante aprendizaje, me encantan los proyectos desafiantes y siempre busco oportunidades para expandir mis habilidades y conocimientos. En mi tiempo libre, disfruto explorar nuevas tecnologías, ya que realmente me fascinan. Puedo afirmar con seguridad que estoy listo para aprender y crecer como desarrollador, así como para enfrentar cualquier desafío que se presente."
+                    />
+                </p>
+            </div>
+        </IntlProvider>
     )
 }
 
