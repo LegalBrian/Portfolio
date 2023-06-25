@@ -39,6 +39,7 @@ const Header = () => {
             </button>
 
             <nav className={`${headerNav} ${menuOpen ? headerNavOpen : headerNavClosed}`}>
+                <a onClick={toggleMenu} className="border cursor-pointer absolute top-[20px] right-0 self-end mr-[40px] border-gray-600 px-4 py-2 rounded text-white focus:outline-none desktop:hidden laptop:hidden">x</a>
                 <a href={"/" + "#home"} onClick={() => setMenuOpen(false)} className={headerNavOption}>
                     <FormattedMessage id="header.home" defaultMessage="INICIO" />
                 </a>

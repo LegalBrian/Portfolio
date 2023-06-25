@@ -8,6 +8,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "eslint-config-react-app": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.4.4",
