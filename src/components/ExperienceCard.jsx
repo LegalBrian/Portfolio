@@ -10,7 +10,7 @@ const ExperienceCard = ( { company, role, date, description, certificate } ) => 
             <p className={experienceCardDescription}>{description}</p>
             {certificate ?
                 <a 
-                    href={certificate} target="_blank"
+                    href={certificate} target="_blank" rel="noreferrer"
                     className={experienceCardCertificate}
                 >
                     <>

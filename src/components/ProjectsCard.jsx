@@ -11,6 +11,7 @@ const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
             :
             <img 
                 src={image}
+                alt=""
                 className={projectCardImage}
             /> 
             }
@@ -29,7 +30,7 @@ const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
             </div>
             <div className={projectCardButtonsContainer}>
                 <a 
-                    href={repo} target="_blank"
+                    href={repo} target="_blank" rel="noreferrer"
                     className={projectCardButton}
                 >
                     <>
@@ -44,7 +45,7 @@ const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
                 </a>
                 {deploy?
                 <a 
-                    href={deploy}   target="_blank"
+                    href={deploy} target="_blank" rel="noreferrer"
                     className={projectCardButton}
                 >
 

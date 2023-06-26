@@ -22,31 +22,31 @@ return (
             <img src={logoB} className="w-16 h-16" alt="Logo" />
         </a>
         <nav className={headerDesktop}>
-            <a href={"/" + "#home"} className={headerNavOption}>
+            <a href="/#home" className={headerNavOption}>
                 <FormattedMessage id="header.home" defaultMessage="INICIO" />
             </a>
-            <a href={"/" + "#about"} className={headerNavOption}>
+            <a href="/#about" className={headerNavOption}>
                 <FormattedMessage id="header.about" defaultMessage="SOBRE MÍ" />
             </a>
-            <a href={"/" + "#skills"} className={headerNavOption}>                    
+            <a href="/#skills" className={headerNavOption}>                    
                 <FormattedMessage id="header.skills" defaultMessage="HABILIDADES" />
             </a>
-            <a href={"/" + "#resume"} className={headerNavOption}>
+            <a href="/#resume" className={headerNavOption}>
                 <FormattedMessage id="header.resume" defaultMessage="CURRICULUM" />
             </a>
-            <a href={"/" + "#projects"} className={headerNavOption}>
+            <a href="/#projects" className={headerNavOption}>
                 <FormattedMessage id="header.projects" defaultMessage="PROYECTOS" />
             </a>
-            <a href={"/" + "#contact"} className={headerNavOption}>
+            <a href="/#contact" className={headerNavOption}>
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
             <div className={headerLangs}>
-                <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
+                <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
                     <Spain width="27" height="27"/>
-                </a>
-                <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
+                </button>
+                <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
                     <USA width="27" height="27"/>
-                </a>
+                </button>
             </div>
         </nav>
         <div onClick={handleNav} className={headerSmartphone}>
@@ -54,31 +54,31 @@ return (
         </div>
         <nav className={nav ? headerSmartphoneOpen : headerSmartphoneClose}>
             <AiOutlineClose size={30} onClick={handleNav} className={headerSmartphoneCloseButton}/>
-            <a href={"/" + "#home"} className={headerNavOption} onClick={handleNav}>
+            <a href="/#home" className={headerNavOption} onClick={handleNav}>
                 <FormattedMessage id="header.home" defaultMessage="INICIO" />
             </a>
-            <a href={"/" + "#about"} className={headerNavOption} onClick={handleNav}>
+            <a href="/#about" className={headerNavOption} onClick={handleNav}>
                 <FormattedMessage id="header.about" defaultMessage="SOBRE MÍ" />
             </a>
-            <a href={"/" + "#skills"} className={headerNavOption} onClick={handleNav}>                    
+            <a href="/#skills" className={headerNavOption} onClick={handleNav}>                    
                 <FormattedMessage id="header.skills" defaultMessage="HABILIDADES" />
             </a>
-            <a href={"/" + "#resume"} className={headerNavOption} onClick={handleNav}>
+            <a href="/#resume" className={headerNavOption} onClick={handleNav}>
                 <FormattedMessage id="header.resume" defaultMessage="CURRICULUM" />
             </a>
-            <a href={"/" + "#projects"} className={headerNavOption} onClick={handleNav}>
+            <a href="/#projects" className={headerNavOption} onClick={handleNav}>
                 <FormattedMessage id="header.projects" defaultMessage="PROYECTOS" />
             </a>
-            <a href={"/" + "#contact"} className={headerNavOption} onClick={handleNav}>
+            <a href="/#contact" className={headerNavOption} onClick={handleNav}>
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
             <div className={headerLangs}>
-                <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
+                <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
                     <Spain width="27" height="27"/>
-                </a>
-                <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
+                </button>
+                <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
                     <USA width="27" height="27"/>
-                </a>
+                </button>
             </div>
         </nav>
     </div>

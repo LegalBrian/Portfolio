@@ -22,19 +22,19 @@ const Contact = () => {
                 />
             </p>
             <div className={contactButtonsContainer}>
-                <a href="https://www.linkedin.com/in/legal-brian/" target="_blank" className={contactButton}>
+                <a href="https://www.linkedin.com/in/legal-brian/" target="_blank" rel="noreferrer" className={contactButton}>
                     <FontAwesomeIcon icon={faLinkedin} />
                     <p className='text-[15px]'>LinkedIn</p>
                 </a>
-                <a href="https://github.com/LegalBrian" target="_blank" className={contactButton}>
+                <a href="https://github.com/LegalBrian" target="_blank" rel="noreferrer" className={contactButton}>
                     <FontAwesomeIcon icon={faGithub} />
                     <p className='text-[15px]'>Github</p>
                 </a>
-                <a href="mailto:legalbriandev@gmail.com" target="_blank" className={contactButton}>
+                <a href="mailto:legalbriandev@gmail.com" target="_blank" rel="noreferrer" className={contactButton}>
                     <FontAwesomeIcon icon={faEnvelope} />
                     <p className='text-[15px]'>Email</p>
                 </a>
-                <a href="https://wa.me/541136853167" target="_blank" className={contactButton}>
+                <a href="https://wa.me/541136853167" target="_blank" rel="noreferrer" className={contactButton}>
                     <FontAwesomeIcon icon={faWhatsapp} />
                     <p className='text-[15px]'>WhatsApp</p>
                 </a>
