@@ -1,6 +1,6 @@
 import logoB from "../images/logo-blanco.png"
 import { useState, useContext } from "react";
-import { headerLangs, headerNavOption } from "./styleComponents";
+import { headerContainer, headerDesktop, headerLangs, headerNavOption, headerSmartphone, headerSmartphoneOpenButton, headerSmartphoneCloseButton, headerSmartphoneOpen, headerSmartphoneClose, headerButtonLangActive } from "./styleComponents";
 import { FormattedMessage } from "react-intl";
 import { langContext } from "../context/langContext";
 import { ReactComponent as Spain } from '../images/Spain.svg';
@@ -17,11 +17,11 @@ const Navbar = () => {
     };
 
 return (
-    <div className='flex justify-between items-center h-[80px] px-4 text-white bg-[rgba(0,0,0,1)]'>
+    <div className={headerContainer}>
         <a href="/">
             <img src={logoB} className="w-16 h-16" alt="Logo" />
         </a>
-        <nav className='hidden desktop:flex laptop:flex'>
+        <nav className={headerDesktop}>
             <a href={"/" + "#home"} className={headerNavOption}>
                 <FormattedMessage id="header.home" defaultMessage="INICIO" />
             </a>
@@ -41,19 +41,19 @@ return (
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
             <div className={headerLangs}>
-                <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]" : "opacity-25"}`}>
+                <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
                     <Spain width="27" height="27"/>
                 </a>
-                <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]" : "opacity-25"}`}>
+                <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
                     <USA width="27" height="27"/>
                 </a>
             </div>
         </nav>
-        <div onClick={handleNav} className='block desktop:hidden laptop:hidden'>
-            {nav ? <></> : <AiOutlineMenu size={30} className="p-[5px] border-[1px] border-white rounded-[6px]"/>}
+        <div onClick={handleNav} className={headerSmartphone}>
+            {nav ? <></> : <AiOutlineMenu size={30} className={headerSmartphoneOpenButton}/>}
         </div>
-        <nav className={nav ? 'fixed right-0 top-0 w-[60%] h-full border-l border-l-gray-900 bg-[#000300] ease-in-out duration-1000 flex flex-col justify-center items-center' : 'ease-in-out h-full top-0 duration-1000 fixed right-[-100%] flex flex-col justify-center items-center'}>
-            <AiOutlineClose size={30} onClick={handleNav} className="absolute top-[25px] right-[15px] self-end p-[5px] border-[1px] border-white rounded-[6px]"/>
+        <nav className={nav ? headerSmartphoneOpen : headerSmartphoneClose}>
+            <AiOutlineClose size={30} onClick={handleNav} className={headerSmartphoneCloseButton}/>
             <a href={"/" + "#home"} className={headerNavOption} onClick={handleNav}>
                 <FormattedMessage id="header.home" defaultMessage="INICIO" />
             </a>
@@ -73,10 +73,10 @@ return (
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
             <div className={headerLangs}>
-                <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]" : "opacity-25"}`}>
+                <a onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
                     <Spain width="27" height="27"/>
                 </a>
-                <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]" : "opacity-25"}`}>
+                <a onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
                     <USA width="27" height="27"/>
                 </a>
             </div>
