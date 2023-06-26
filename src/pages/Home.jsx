@@ -1,9 +1,8 @@
 import foto from "../images/Foto.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { ReactComponent as Linkedin } from '../images/linkedin.svg';
+import { ReactComponent as Github } from '../images/github.svg';
+import { ReactComponent as Mail } from '../images/mail.svg';
+import { ReactComponent as Whatsapp } from '../images/whatsapp.svg';
 import { homeBackgroud, homeContainer, homeCardContainer, homeCardImage, homeCardName, homeCardTitle, homeCardContactContainer, homeCardContactButton } from "./stylePages";
 
 const Home = () => {
@@ -20,16 +19,16 @@ const Home = () => {
                 <p className={homeCardTitle}>Full Stack Web Developer</p>
                 <div className={homeCardContactContainer}>
                     <a href="https://www.linkedin.com/in/legal-brian/" target="_blank" rel="noreferrer" className={homeCardContactButton}>
-                        <FontAwesomeIcon icon={faLinkedin}/>
+                        <Linkedin fill="white" width="27" height="27"/>
                     </a>
                     <a href="https://github.com/LegalBrian" target="_blank" rel="noreferrer" className={homeCardContactButton}>
-                        <FontAwesomeIcon icon={faGithub}/>
+                        <Github fill="white" width="27" height="27"/>
                     </a>
                     <a href="mailto:legalbriandev@gmail.com" target="_blank" rel="noreferrer" className={homeCardContactButton}>
-                        <FontAwesomeIcon icon={faEnvelope}/>
+                        <Mail fill="white" width="27" height="27"/>
                     </a>
                     <a href="https://wa.me/541136853167" target="_blank" rel="noreferrer" className={homeCardContactButton}>
-                        <FontAwesomeIcon icon={faWhatsapp}/>
+                        <Whatsapp fill="white" width="27" height="27"/>
                     </a>
                 </div>
             </div>

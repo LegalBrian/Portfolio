@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { ReactComponent as Linkedin } from '../images/linkedin.svg';
+import { ReactComponent as Github } from '../images/github.svg';
+import { ReactComponent as Mail } from '../images/mail.svg';
+import { ReactComponent as Whatsapp } from '../images/whatsapp.svg';
 import { contactButton, contactButtonsContainer, contactContainer, contactDescription, contactTitle } from './stylePages';
 import { FormattedMessage } from 'react-intl';
 
@@ -23,19 +22,19 @@ const Contact = () => {
             </p>
             <div className={contactButtonsContainer}>
                 <a href="https://www.linkedin.com/in/legal-brian/" target="_blank" rel="noreferrer" className={contactButton}>
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <Linkedin fill="white" width="27" height="27"/>
                     <p className='text-[15px]'>LinkedIn</p>
                 </a>
                 <a href="https://github.com/LegalBrian" target="_blank" rel="noreferrer" className={contactButton}>
-                    <FontAwesomeIcon icon={faGithub} />
+                    <Github fill="white" width="27" height="27"/>
                     <p className='text-[15px]'>Github</p>
                 </a>
                 <a href="mailto:legalbriandev@gmail.com" target="_blank" rel="noreferrer" className={contactButton}>
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <Mail fill="white" width="27" height="27"/>
                     <p className='text-[15px]'>Email</p>
                 </a>
                 <a href="https://wa.me/541136853167" target="_blank" rel="noreferrer" className={contactButton}>
-                    <FontAwesomeIcon icon={faWhatsapp} />
+                    <Whatsapp fill="white" width="27" height="27"/>
                     <p className='text-[15px]'>WhatsApp</p>
                 </a>
             </div>
