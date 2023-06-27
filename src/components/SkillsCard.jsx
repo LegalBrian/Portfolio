@@ -1,4 +1,4 @@
-import { skillsCardContainer, skillsCardSvg, skillsCardText } from "../assets/styles/styleComponents";
+import { skillsCardContainer, skillsCardText } from "../assets/styles/styleComponents";
 
 const SkillsCard = ( {svg, text} ) => {
     return (

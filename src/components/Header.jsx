@@ -1,6 +1,6 @@
 import logoB from "../assets/images/logo-blanco.png"
 import { useState, useContext } from "react";
-import { headerContainer, headerDesktop, headerLangs, headerNavOption, headerSmartphone, headerSmartphoneOpenButton, headerSmartphoneCloseButton, headerSmartphoneOpen, headerSmartphoneClose, headerButtonLangActive } from "../assets/styles/styleComponents";
+import { headerContainer, headerDesktop, headerLangs, headerNavOption, headerSmartphone, headerSmartphoneOpenButton, headerSmartphoneCloseButton, headerSmartphoneOpen, headerSmartphoneClose, headerButtonLangActive, headerLangOption, headerLangOptionSmartphone } from "../assets/styles/styleComponents";
 import { FormattedMessage } from "react-intl";
 import { langContext } from "../assets/context/langContext";
 import { ReactComponent as Spain } from '../assets/images/Spain.svg';
@@ -40,13 +40,16 @@ return (
             <a href="/#contact" className={headerNavOption}>
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
-            <div className={headerLangs}>
-                <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
-                    <Spain width="27" height="27"/>
-                </button>
-                <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
-                    <USA width="27" height="27"/>
-                </button>
+            <div className={headerLangOption}>
+                <FormattedMessage className={headerNavOption} id="header.langOption" defaultMessage="IDIOMA" />
+                <div className={headerLangs}>
+                    <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
+                        <Spain width="27" height="27"/>
+                    </button>
+                    <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
+                        <USA width="27" height="27"/>
+                    </button>
+                </div>
             </div>
         </nav>
         <div onClick={handleNav} className={headerSmartphone}>
@@ -72,13 +75,16 @@ return (
             <a href="/#contact" className={headerNavOption} onClick={handleNav}>
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
-            <div className={headerLangs}>
-                <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
-                    <Spain width="27" height="27"/>
-                </button>
-                <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
-                    <USA width="27" height="27"/>
-                </button>
+            <div className={headerLangOptionSmartphone}>
+                <FormattedMessage className={headerNavOption} id="header.langOption" defaultMessage="IDIOMA" />
+                <div className={headerLangs}>
+                    <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? headerButtonLangActive : "opacity-25"}`}>
+                        <Spain width="27" height="27"/>
+                    </button>
+                    <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? headerButtonLangActive : "opacity-25"}`}>
+                        <USA width="27" height="27"/>
+                    </button>
+                </div>
             </div>
         </nav>
     </div>

@@ -4,15 +4,17 @@ import bg404 from "../images/404-bg.gif"
 // Header
 
 export const headerContainer = 'flex justify-between items-center h-[80px] px-4 text-white bg-[rgba(0,0,0,1)]';
-export const headerDesktop = 'hidden desktop:flex laptop:flex';
+export const headerDesktop = 'hidden desktop:flex laptop:flex items-center justify-center';
 export const headerNavOption = "px-4 py-2 hover:text-blue-500 transition duration-500";
+export const headerLangs = "flex justify-center items-center gap-[10px]";
+export const headerButtonLangActive = "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]";
+export const headerLangOption = "flex justify-center items-center gap-[10px] border-[1px] border-white rounded-[5px] p-[5px]";
 export const headerSmartphone = 'block desktop:hidden laptop:hidden';
 export const headerSmartphoneOpenButton = "p-[5px] border-[1px] border-white rounded-[6px]";
 export const headerSmartphoneCloseButton = "absolute top-[25px] right-[15px] self-end p-[5px] border-[1px] border-white rounded-[6px]";
 export const headerSmartphoneOpen = 'fixed right-0 top-0 w-[60%] h-full border-l border-l-gray-900 bg-[#000300] ease-in-out duration-1000 flex flex-col justify-center items-center gap-[15px] z-10';
 export const headerSmartphoneClose = 'ease-in-out h-full top-0 duration-1000 fixed right-[-100%] flex flex-col justify-center items-center gap-[15px]';
-export const headerButtonLangActive = "opacity-100 rounded-full border-[rgba(0,0,100,1)] border-[3px]";
-export const headerLangs = "flex items-center gap-[10px] pr-[10px]";
+export const headerLangOptionSmartphone = "flex flex-col justify-center items-center gap-[5px]";
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 // SkillsCard

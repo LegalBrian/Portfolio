@@ -5,6 +5,7 @@
     "header.resume": "RESUME",
     "header.projects": "PROJECTS",
     "header.contact": "CONTACT",
+    "header.langOption": "LANGUAGE",
 
     "error404.title1": "Error 404:",
     "error404.title2": "Page not found!",

@@ -1,5 +1,5 @@
 import { FormattedMessage } from "react-intl";
-import { projectCardContainer, projectCardImage, projectCardTitle, projectCardTechnologiesContainer, projectCardTechnologies, projectCardTechnologiesSvg, projectCardTechnologiesText, projectCardButtonsContainer, projectCardButton } from "../assets/styles/styleComponents";
+import { projectCardContainer, projectCardImage, projectCardTitle, projectCardTechnologiesContainer, projectCardTechnologies, projectCardTechnologiesText, projectCardButtonsContainer, projectCardButton } from "../assets/styles/styleComponents";
 import YouTubeVideo from "./YoutubeVideo";
 
 
