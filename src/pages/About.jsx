@@ -1,4 +1,4 @@
-import { aboutContainer, aboutTitle, aboutDescription } from "./stylePages";
+import { aboutContainer, aboutTitle, aboutDescription } from "../assets/styles/stylePages";
 import { FormattedMessage } from 'react-intl';
 
 const About = () => {

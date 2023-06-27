@@ -1,8 +1,8 @@
 
 import { FormattedMessage } from "react-intl";
 import Carrucel from "../components/Carrucel";
-import { tech } from "../components/lists/SkillsList";
-import { skillsContainer, skillsTitle, skillsListContainer, skillsListTitle } from "./stylePages";
+import { tech } from "../assets/lists/SkillsList";
+import { skillsContainer, skillsTitle, skillsListContainer, skillsListTitle } from "../assets/styles/stylePages";
 
 const Skills = () => {
     return (

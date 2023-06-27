@@ -1,6 +1,6 @@
 import ProjectsCard from "../components/ProjectsCard";
-import { projects } from "../components/lists/ProjectsList";
-import { projectsContainer, projectsTitle, projectsListContainer } from "./stylePages";
+import { projects } from "../assets/lists/ProjectsList";
+import { projectsContainer, projectsTitle, projectsListContainer } from "../assets/styles/stylePages";
 import { FormattedMessage } from "react-intl";
 
 const Projects = () => {

@@ -1,4 +1,4 @@
-import { youtubeVideoContainer, youtubeVideoButton, youtubeVideoButtonSvg } from "./styleComponents";
+import { youtubeVideoContainer, youtubeVideoButton, youtubeVideoButtonSvg } from "../assets/styles/styleComponents";
 
 const YouTubeVideo = ({ videoId }) => {
 

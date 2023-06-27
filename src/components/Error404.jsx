@@ -1,4 +1,4 @@
-import { error404Background, error404Container, error404Title1, error404Title2 } from "./styleComponents";
+import { error404Background, error404Container, error404Title1, error404Title2 } from "../assets/styles/styleComponents";
 import { FormattedMessage } from "react-intl";
 
 const Error404 = () => {

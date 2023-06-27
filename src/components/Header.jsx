@@ -1,10 +1,10 @@
-import logoB from "../images/logo-blanco.png"
+import logoB from "../assets/images/logo-blanco.png"
 import { useState, useContext } from "react";
-import { headerContainer, headerDesktop, headerLangs, headerNavOption, headerSmartphone, headerSmartphoneOpenButton, headerSmartphoneCloseButton, headerSmartphoneOpen, headerSmartphoneClose, headerButtonLangActive } from "./styleComponents";
+import { headerContainer, headerDesktop, headerLangs, headerNavOption, headerSmartphone, headerSmartphoneOpenButton, headerSmartphoneCloseButton, headerSmartphoneOpen, headerSmartphoneClose, headerButtonLangActive } from "../assets/styles/styleComponents";
 import { FormattedMessage } from "react-intl";
-import { langContext } from "../context/langContext";
-import { ReactComponent as Spain } from '../images/Spain.svg';
-import { ReactComponent as USA } from '../images/USA.svg';
+import { langContext } from "../assets/context/langContext";
+import { ReactComponent as Spain } from '../assets/images/Spain.svg';
+import { ReactComponent as USA } from '../assets/images/USA.svg';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {

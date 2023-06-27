@@ -1,9 +1,9 @@
-import foto from "../images/Foto.png"
-import { ReactComponent as Linkedin } from '../images/linkedin.svg';
-import { ReactComponent as Github } from '../images/github.svg';
-import { ReactComponent as Mail } from '../images/mail.svg';
-import { ReactComponent as Whatsapp } from '../images/whatsapp.svg';
-import { homeBackgroud, homeContainer, homeCardContainer, homeCardImage, homeCardName, homeCardTitle, homeCardContactContainer, homeCardContactButton } from "./stylePages";
+import foto from "../assets/images/Foto.png"
+import { ReactComponent as Linkedin } from '../assets/images/linkedin.svg';
+import { ReactComponent as Github } from '../assets/images/github.svg';
+import { ReactComponent as Mail } from '../assets/images/mail.svg';
+import { ReactComponent as Whatsapp } from '../assets/images/whatsapp.svg';
+import { homeBackgroud, homeContainer, homeCardContainer, homeCardImage, homeCardName, homeCardTitle, homeCardContactContainer, homeCardContactButton } from "../assets/styles/stylePages";
 
 const Home = () => {
 

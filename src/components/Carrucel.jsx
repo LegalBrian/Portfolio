@@ -1,55 +1,58 @@
-import { useState } from "react";
-import SkillsCard from "./SkillsCard";
-import { carrucelContainer, carrucelButton, carrucelButtonText, carrucelItems } from "./styleComponents";
+import React from 'react';
+import SkillsCard from './SkillsCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.min.css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
+import { EffectCoverflow, Autoplay } from 'swiper';
 
 const Carrucel = ({ data }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleNextSlide = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === data.length - 1 ? data.length - 1 : prevIndex + 1
-    );
-  };
-
-  const handlePrevSlide = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? 0 : prevIndex - 1
-    );
-  };
-
-
   return (
-    <div className={carrucelContainer}>
-        <button
-          className={carrucelButton}
-          onClick={handlePrevSlide}
-        >
-          <span className={carrucelButtonText}>&lt;</span>
-        </button>
-        <div className={carrucelItems}>
-          {data.map((link, index) => {
-              const distance = Math.abs(index - activeIndex);
-              let className = "hidden";
-              if (distance <= 1 || (distance === 2 && activeIndex === 0) || (distance === 2 && activeIndex === data.length - 1)) {
-                  className = `${
-                      distance === 0 ? "opacity-100" : "opacity-50"
-                  } transform ${distance === 0 ? "scale-100" : "scale-50 blur-sm"}`;
-              }
-              return (
-                <div key={index} className={`transition-all duration-700 ${className}`}>
-                  <SkillsCard svg={link.svg} text={link.text} />
-                </div>
-            );
-          })}
-        </div>
-        <button
-          className={carrucelButton}
-          onClick={handleNextSlide}
-        >
-          <span className={carrucelButtonText}>&gt;</span>
-        </button>
+    <div className="container">
+      <Swiper
+        modules={[EffectCoverflow, Autoplay]}
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={2}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 20,
+          depth: 200,
+          modifier: 1.2,
+        }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          },
+        }}
+        className='swiper_container'
+      >
+        {data.map((link, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex flex-col items-center">
+              <SkillsCard svg={link.svg} text={link.text} />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
+
   );
-};
+}
 
 export default Carrucel;

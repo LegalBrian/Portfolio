@@ -1,5 +1,5 @@
-import logoB from "../images/logo-blanco.png";
-import { footerButton, footerButtonImage, footerContainer } from "./styleComponents";
+import logoB from "../assets/images/logo-blanco.png";
+import { footerButton, footerButtonImage, footerContainer } from "../assets/styles/styleComponents";
 
 const Footer = () => {
     return (

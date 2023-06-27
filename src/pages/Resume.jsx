@@ -1,6 +1,6 @@
 import ExperienceCard from "../components/ExperienceCard";
-import { education, workExperience } from "../components/lists/ExperienceList";
-import { resumeContainer, resumeTitle, resumeSubContainer, resumeExperience, resumeSubTitle, resumeExperienceCardContainer, resumeButton } from "./stylePages";
+import { education, workExperience } from "../assets/lists/ExperienceList";
+import { resumeContainer, resumeTitle, resumeSubContainer, resumeExperience, resumeSubTitle, resumeExperienceCardContainer, resumeButton } from "../assets/styles/stylePages";
 import { FormattedMessage } from "react-intl";
 
 const Resume = () => {
@@ -44,7 +44,7 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/LegalBrian/Portfolio/raw/main/src/files/Brian%20Legal%20Curriculum.pdf" download className={resumeButton}>
+            <a href="https://github.com/LegalBrian/Portfolio/raw/main/src/assets/files/Brian%20Legal%20Curriculum.pdf" download className={resumeButton}>
                 <>
                     <FormattedMessage 
                         id="resume.button" 

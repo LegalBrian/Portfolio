@@ -1,4 +1,4 @@
-import { experienceCardContainer, experienceCardCompany, experienceCardRole , experienceCardDate, experienceCardDescription, experienceCardCertificate} from "./styleComponents";
+import { experienceCardContainer, experienceCardCompany, experienceCardRole , experienceCardDate, experienceCardDescription, experienceCardCertificate} from "../assets/styles/styleComponents";
 import { FormattedMessage } from "react-intl";
 
 const ExperienceCard = ( { company, role, date, description, certificate } ) => {
