@@ -7,7 +7,7 @@ import { ReactComponent as Spain } from '../assets/images/Spain.svg';
 import { ReactComponent as USA } from '../assets/images/USA.svg';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
-const Navbar = () => {
+const Header = () => {
 
     const lang = useContext(langContext);
     const [nav, setNav] = useState(false);
@@ -91,4 +91,4 @@ return (
   );
 };
 
-export default Navbar;
+export default Header;

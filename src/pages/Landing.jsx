@@ -6,10 +6,12 @@ import Resume from "./Resume";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const Landing = () => {
     return(
         <div>
+            <ScrollToTopButton/>
             <Header/>
             <Home/>
             <About/>
