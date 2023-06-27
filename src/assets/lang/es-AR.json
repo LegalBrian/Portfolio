@@ -30,6 +30,13 @@
 
     "skills.title": "Habilidades",
     "skills.tech": "Habilidades Técnicas",
+    "skills.categoryTitle1": "Lenguajes de programación",
+    "skills.categoryTitle2": "Entorno de ejecución",
+    "skills.categoryTitle3": "Frameworks y librerias",
+    "skills.categoryTitle4": "Bases de datos",
+    "skills.categoryTitle5": "Lenguajes de marcado y estilo",
+    "skills.categoryTitle6": "Control de versiones",
+    "skills.categoryTitle7": "Herramientas adicionales",
 
     "experienceList.education.FullStackWebDeveloper.description" : "Un bootcamp enfocado en desarrollar habilidades en herramientas de programación como JavaScript, CSS, Node.js y React, junto con otras tecnologías que complementan el desarrollo profesional de front-end y back-end. Tiene una duración de 4 u 8 meses, y las clases son en vivo y están impartidas por expertos de la industria.",
     "experienceList.education.FullStackWebDeveloper.date": "oct 2022 - feb 2023",

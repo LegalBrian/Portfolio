@@ -69,7 +69,7 @@ export const projects = [
             },
             {
                 svg: <React className={projectCardTechnologiesSvg}/>,
-                text: "React",
+                text: "React.js",
             },
             {
                 svg: <NodeJS className={projectCardTechnologiesSvg}/>,

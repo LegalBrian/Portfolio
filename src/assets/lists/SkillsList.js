@@ -32,7 +32,7 @@ export const tech = [
     },
     {
         svg: <React className={skillsCardSvg}/>,
-        text: "React",
+        text: "React.js",
     },
     {
         svg: <React className={skillsCardSvg}/>,

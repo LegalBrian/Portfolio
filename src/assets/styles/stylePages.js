@@ -30,7 +30,14 @@ export const aboutDescription = "desktop:text-[20px] smartphone:text-[15px]";
 export const skillsContainer = "flex flex-col justify-center items-center text-center bg-[rgba(0,0,50,1.0)] text-[#ffffff] py-[20px]";
 export const skillsTitle = "flex flex-col text-center desktop:text-[40px] smartphone:text-[30px]";
 export const skillsListContainer = "flex flex-col justify-center items-center";
-export const skillsListTitle = "text-center text-[20px]";
+export const skillsCategoryContainer = "grid items-start gap-[20px] p-[20px] desktop:grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 smartphone-r:grid-cols-2 smartphone:grid-cols-1";
+export const skillsCategory = "flex flex-col justify-center gap-[15px]";
+export const skillsCategoryTitle = "text-[20px]";
+export const skillsCategoryList = "text-start";
+export const skillsCategoryFirstItem = "border-y-[1px] pl-[20px] border-white flex flex-row gap-[5px] py-[5px]";
+export const skillsCategoryItem = "border-b-[1px] pl-[20px] border-white flex flex-row gap-[5px] py-[5px]";
+export const skillsCategoryItemIcon = "w-[20px] h-[20px]";
+
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Resume
