@@ -20,9 +20,7 @@ const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
                 {technologies.map((ele, index) => {
                     return(
                         <div key={index} className={projectCardTechnologies}>
-                            <svg fill="#ffffff" className={projectCardTechnologiesSvg} viewBox="0 0 128 128">
-                                {ele.svg}
-                            </svg>
+                            {ele.svg}
                             <p className={projectCardTechnologiesText}>{ele.text}</p>
                         </div>
                     )

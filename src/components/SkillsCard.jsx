@@ -3,12 +3,7 @@ import { skillsCardContainer, skillsCardSvg, skillsCardText } from "../assets/st
 const SkillsCard = ( {svg, text} ) => {
     return (
         <div className={skillsCardContainer}>
-            {svg?
-            <svg fill="#ffffff" className={skillsCardSvg} viewBox="0 0 128 128">
-                {svg}
-            </svg>
-            : null
-            }
+            {svg}
             <p className={skillsCardText}>{text}</p>
         </div>
     )
