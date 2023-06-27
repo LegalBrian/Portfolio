@@ -3,6 +3,7 @@ import { ReactComponent as JavaScript } from '../svg/Javascript.svg';
 import { ReactComponent as TypeScript } from '../svg/Typescript.svg';
 import { ReactComponent as NodeJS } from '../svg/NodeJS.svg';
 import { ReactComponent as React } from '../svg/React.svg';
+import { ReactComponent as ExpressJS } from '../svg/ExpressJS.svg';
 import { ReactComponent as Angular } from '../svg/Angular.svg';
 import { ReactComponent as Tailwind } from '../svg/Tailwind.svg';
 import { ReactComponent as PostgreSQL } from '../svg/PostgreSQL.svg';
@@ -38,7 +39,7 @@ export const tech = [
         text: "React Native",
     },
     {
-        svg: <NodeJS className={skillsCardSvg}/>,
+        svg: <ExpressJS className={skillsCardSvg}/>,
         text: "Express.js",
     },
     {

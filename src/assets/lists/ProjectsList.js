@@ -3,6 +3,7 @@ import { projectCardTechnologiesSvg } from '../styles/styleComponents';
 import { ReactComponent as JavaScript } from '../svg/Javascript.svg';
 import { ReactComponent as NodeJS } from '../svg/NodeJS.svg';
 import { ReactComponent as React } from '../svg/React.svg';
+import { ReactComponent as ExpressJS } from '../svg/ExpressJS.svg';
 import { ReactComponent as Tailwind } from '../svg/Tailwind.svg';
 import { ReactComponent as PostgreSQL } from '../svg/PostgreSQL.svg';
 import { ReactComponent as MongoDB } from '../svg/MongoDB.svg';
@@ -22,7 +23,7 @@ export const projects = [
                 text: "MongoDB",
             },
             {
-                svg: <NodeJS className={projectCardTechnologiesSvg}/>,
+                svg: <ExpressJS className={projectCardTechnologiesSvg}/>,
                 text: "ExpressJS",
             },
             {
@@ -63,7 +64,7 @@ export const projects = [
                 text: "PostgreSQL",
             },
             {
-                svg: <NodeJS className={projectCardTechnologiesSvg}/>,
+                svg: <ExpressJS className={projectCardTechnologiesSvg}/>,
                 text: "ExpressJS",
             },
             {
