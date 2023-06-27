@@ -4,6 +4,7 @@ import { ReactComponent as Mail } from '../assets/images/mail.svg';
 import { ReactComponent as Whatsapp } from '../assets/images/whatsapp.svg';
 import { contactButton, contactButtonsContainer, contactContainer, contactDescription, contactTitle } from '../assets/styles/stylePages';
 import { FormattedMessage } from 'react-intl';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
     return (
@@ -38,6 +39,7 @@ const Contact = () => {
                     <p className='text-[15px]'>WhatsApp</p>
                 </a>
             </div>
+            <ContactForm />
         </div>
     );
 }
