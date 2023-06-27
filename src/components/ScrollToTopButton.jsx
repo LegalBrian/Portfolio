@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
     <a
       id="btnScrollToTop"
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 p-2 rounded-full flex items-center justify-center bg-[rgb(87,87,250)] w-[50px] h-[50px] transition-opacity duration-1000 ${
+      className={`fixed bottom-4 right-4 p-2 rounded-full flex items-center justify-center bg-[rgb(100,100,250)] w-[50px] h-[50px] transition-opacity duration-1000 ${
         isVisible ? 'block' : 'hidden'
       }`}
     >
