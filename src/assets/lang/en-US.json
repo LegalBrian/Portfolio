@@ -20,6 +20,11 @@
 
     "contact.title": "Contact",
     "contact.description": "If you are interested in my work and would like to discuss a potential collaboration, feel free to visit my professional profiles on LinkedIn and GitHub to learn more about my experience and skills. You can also contact me via email or WhatsApp to discuss a project or work opportunity. I look forward to hearing from you soon and working together in the future!",
+    "contactForm.name": "Name",
+    "contactForm.email": "Email",
+    "contactForm.subject": "Subject",
+    "contactForm.message": "Message",
+    "contactForm.button": "Send",
 
     "projects.title": "Projects",
 

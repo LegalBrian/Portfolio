@@ -72,3 +72,21 @@ export const error404Background = {
 export const error404Container = "flex flex-col items-center justify-center h-screen";
 export const error404Title1 = " text-[#ffffff] animate-pulse text-center desktop:text-[80px] smartphone:text-[50px]";
 export const error404Title2 = "text-[rgba(255,75,75,1)] animate-pulse text-center desktop:text-[80px] smartphone:text-[50px]"
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// ScrollToTopButton
+
+export const scrollToTopButton = "fixed bottom-4 right-4 p-2 rounded-full flex items-center justify-center bg-[rgba(75,75,255,1)] w-[50px] h-[50px] transition-opacity duration-1000";
+export const scrollToTopButtonIcon = "self-center w-[40px] h-[40px]";
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+// ContactForm
+
+export const contactFormContainer = "bg-[rgb(24,24,24,0.6)] rounded-[10px] w-5/6 flex flex-col p-[20px] mt-[25px]";
+export const contactFormInputsContainer = 'grid grid-cols-2 p-[20px] gap-[20px] smartphone:grid-cols-1 smartphone-r:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2';
+export const contactFormInputLabel = 'flex flex-col gap-[10px]';
+export const contactFormInputTitle = "flex text-start pl-[15px]";
+export const contactFormInput = "w-full px-4 py-2 mb-4 border-[rgba(75,75,255,1)] border-b-[1px] rounded bg-transparent outline-none focus:outline-[rgba(75,75,255,1)] focus:border-transparent";
+export const contactFormTextarea = "w-full px-4 py-2 mb-4 border-[rgba(75,75,255,1)] border-b-[1px] border-r-[1px] rounded bg-transparent resize-none h-full outline-none focus:outline-[rgba(75,75,255,1)] focus:border-transparent smartphone:h-[150px] smartphone-r:h-[150px] tablet:h-full laptop:h-full desktop:h-full";
+export const contactFormButtonContainer = 'flex justify-center items-center';
+export const contactFormButton = "items-center text-[20px] w-[100px] h-[40px] bg-[rgba(0,0,0,0.7)] cursor-pointer rounded-full border-[#ffffff] border-[2px] hover:bg-[rgba(75,75,255,1)] transition duration-500";

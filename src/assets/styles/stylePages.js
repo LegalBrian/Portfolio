@@ -60,7 +60,7 @@ export const projectsListContainer = "desktop:grid grid-cols-2 justify-items-cen
 //----------------------------------------------------------------------------------------------------------------------------------------
 // Contact
 
-export const contactContainer = "flex flex-col justify-center items-center gap-[25px] bg-[rgb(0,0,25)] text-[#ffffff] text-center py-[20px] gap-[10px] desktop:px-[40px] smartphone:px-[20px]";
+export const contactContainer = "flex flex-col justify-center items-center bg-[rgb(0,0,25)] text-[#ffffff] text-center py-[20px] gap-[10px] desktop:px-[40px] smartphone:px-[20px]";
 export const contactTitle = "desktop:text-[40px] smartphone:text-[30px]";
 export const contactDescription = "desktop:text-[20px] smartphone:text-[15px]";
 export const contactButtonsContainer = "flex desktop:flex-row justify-evenly smartphone:flex-wrap gap-[20px]";
