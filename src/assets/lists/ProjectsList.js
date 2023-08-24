@@ -12,6 +12,36 @@ import { ReactComponent as CSS } from '../svg/CSS.svg';
 
 export const projects = [
     {
+
+    title: "Feliza", 
+        image: "https://raw.githubusercontent.com/LegalBrian/Portfolio/main/src/assets/images/feliza.png",
+        videoId: "",
+        repo: "https://github.com/LegalBrian/Feliza", 
+        deploy: "",
+        technologies: [
+            {
+                svg: <React className={projectCardTechnologiesSvg}/>,
+                text: "React",
+            },
+            {
+                svg: <JavaScript className={projectCardTechnologiesSvg}/>,
+                text: "JavaScript",
+            },
+            {
+                svg: <Tailwind className={projectCardTechnologiesSvg}/>,
+                text: "Tailwind",
+            },
+            {
+                svg: <HTML className={projectCardTechnologiesSvg}/>,
+                text: "HTML",
+            },
+            {
+                svg: <CSS className={projectCardTechnologiesSvg}/>,
+                text: "CSS",
+            },
+        ],
+    },
+    {
         title: "Find a Home", 
         image: "",
         videoId: "w5oc2njVr3c",
