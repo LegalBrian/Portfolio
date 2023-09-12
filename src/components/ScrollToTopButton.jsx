@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as Arrow } from '../assets/images/arrow.svg';
 import { animateScroll as scroll } from 'react-scroll';
-import { scrollToTopButton, scrollToTopButtonIcon } from '../assets/styles/styleComponents';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,11 +31,11 @@ const ScrollToTopButton = () => {
     <button
       id="btnScrollToTop"
       onClick={scrollToTop}
-      className={`${scrollToTopButton} ${
+      className={`fixed bottom-4 right-4 p-2 rounded-full flex items-center justify-center bg-azul-hover w-[50px] h-[50px] transition-opacity duration-1000 ${
         isVisible ? 'block' : 'hidden'
       }`}
     >
-      <Arrow className={scrollToTopButtonIcon} />
+      <Arrow className="self-center w-[40px] h-[40px]" />
     </button>
   );
 };

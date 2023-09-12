@@ -1,4 +1,3 @@
-import { skillsCardSvg } from '../styles/styleComponents';
 import { ReactComponent as JavaScript } from '../svg/Javascript.svg';
 import { ReactComponent as TypeScript } from '../svg/Typescript.svg';
 import { ReactComponent as NodeJS } from '../svg/NodeJS.svg';
@@ -19,75 +18,75 @@ import { ReactComponent as Word } from '../svg/Word.svg';
 
 export const tech = [
     {
-        svg: <JavaScript className={skillsCardSvg}/>,
+        svg: <JavaScript className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "JavaScript",
     },
     {
-        svg: <TypeScript className={skillsCardSvg}/>,
+        svg: <TypeScript className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "TypeScript",
     },
     {
-        svg: <NodeJS className={skillsCardSvg}/>,
+        svg: <NodeJS className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Node.js",
     },
     {
-        svg: <React className={skillsCardSvg}/>,
+        svg: <React className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "React.js",
     },
     {
-        svg: <React className={skillsCardSvg}/>,
+        svg: <React className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "React Native",
     },
     {
-        svg: <ExpressJS className={skillsCardSvg}/>,
+        svg: <ExpressJS className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Express.js",
     },
     {
-        svg: <Angular className={skillsCardSvg}/>,
+        svg: <Angular className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Angular",
     },
     {
-        svg: <Tailwind className={skillsCardSvg}/>,
+        svg: <Tailwind className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Tailwind",
     },
     {
-        svg: <PostgreSQL className={skillsCardSvg}/>,
+        svg: <PostgreSQL className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "PostgreSQL",
     },
     {
-        svg: <MongoDB className={skillsCardSvg}/>,
+        svg: <MongoDB className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "MongoDB",
     },
     {
-        svg: <HTML className={skillsCardSvg}/>,
+        svg: <HTML className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "HTML",
     },
     {
-        svg: <CSS className={skillsCardSvg}/>,
+        svg: <CSS className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "CSS",
     },
     {
-        svg: <Git className={skillsCardSvg}/>,
+        svg: <Git className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Git",
     },
     {
-        svg: <Github className={skillsCardSvg}/>,
+        svg: <Github className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Github",
     },
     {
-        svg: <Postman className={skillsCardSvg}/>,
+        svg: <Postman className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Postman",
     },
     {
-        svg: <Figma className={skillsCardSvg}/>,
+        svg: <Figma className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Figma",
     },
     {
-        svg: <Excel className={skillsCardSvg}/>,
+        svg: <Excel className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Excel",
     },
     {
-        svg: <Word className={skillsCardSvg}/>,
+        svg: <Word className="desktop:w-[100px] desktop:h-[100px] smartphone:w-[60px] smartphone:h-[60px] smartphone-r:w-[70px] smartphone-r:h-[70px] tablet:h-[90px] tablet:w-[90px]"/>,
         text: "Word",
     },
 ];

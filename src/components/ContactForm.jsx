@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { contactFormButton, contactFormButtonContainer, contactFormContainer, contactFormInput, contactFormInputLabel, contactFormInputTitle, contactFormInputsContainer, contactFormTextarea } from '../assets/styles/styleComponents';
 import { FormattedMessage } from 'react-intl';
+
 const ContactForm = () => {
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
@@ -8,11 +8,11 @@ const ContactForm = () => {
   const [mensaje, setMensaje] = useState('');
 
   return (
-    <form action="https://formsubmit.co/bfdc8398c85a9753d009bc77d90cffe0" method="POST" className={contactFormContainer}>
-        <div className={contactFormInputsContainer}>
+    <form action="https://formsubmit.co/bfdc8398c85a9753d009bc77d90cffe0" method="POST" className="bg-negro rounded-[10px] w-5/6 flex flex-col p-[20px] mt-[25px]">
+        <div className="grid grid-cols-2 p-[20px] gap-[20px] smartphone:grid-cols-1 smartphone-r:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2">
             <div>
-                <div className={contactFormInputLabel}>
-                    <label htmlFor="nombre" className={contactFormInputTitle}>
+                <div className="flex flex-col gap-[10px]">
+                    <label htmlFor="nombre" className="flex text-start pl-[15px]">
                         <FormattedMessage id="contactForm.name" defaultMessage="Nombre" />
                     </label>
                     <input
@@ -22,11 +22,11 @@ const ContactForm = () => {
                         value={nombre}
                         onChange={(e) => setNombre(e.target.value)}
                         required
-                        className={contactFormInput}
+                        className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
                     />
                 </div>
-                <div className={contactFormInputLabel}>
-                    <label htmlFor="email" className={contactFormInputTitle}>
+                <div className="flex flex-col gap-[10px]">
+                    <label htmlFor="email" className="flex text-start pl-[15px]">
                         <FormattedMessage id="contactForm.email" defaultMessage="Email" />
                     </label>
                     <input
@@ -36,11 +36,11 @@ const ContactForm = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        className={contactFormInput}
+                        className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
                     />
                 </div>
-                <div className={contactFormInputLabel}>
-                    <label htmlFor="asunto" className={contactFormInputTitle}>
+                <div className="flex flex-col gap-[10px]">
+                    <label htmlFor="asunto" className="flex text-start pl-[15px]">
                         <FormattedMessage id="contactForm.subject" defaultMessage="Asunto" />
                     </label>
                     <input
@@ -50,12 +50,12 @@ const ContactForm = () => {
                         value={asunto}
                         onChange={(e) => setAsunto(e.target.value)}
                         required
-                        className={contactFormInput}
+                        className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
                     />
                 </div>
             </div>
-            <div  className={contactFormInputLabel}>
-                <label htmlFor="mensaje" className={contactFormInputTitle}>
+            <div  className="flex flex-col gap-[10px]">
+                <label htmlFor="mensaje" className="flex text-start pl-[15px]">
                     <FormattedMessage id="contactForm.message" defaultMessage="Mensaje" />
                 </label>
                 <textarea
@@ -65,14 +65,14 @@ const ContactForm = () => {
                     onChange={(e) => setMensaje(e.target.value)}
                     required
                     maxlength="500"
-                    className={contactFormTextarea}
+                    className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] border-r-[1px] rounded bg-transparent resize-none h-full outline-none focus:outline-azul-hover focus:border-transparent smartphone:h-[150px] smartphone-r:h-[150px] tablet:h-full laptop:h-full desktop:h-full"
                 ></textarea>
             </div>
         </div>
-        <div className={contactFormButtonContainer}>
+        <div className="flex justify-center items-center">
             <button
                 type="submit"
-                className={contactFormButton}
+                className="items-center text-[20px] w-[100px] h-[40px] bg-negro cursor-pointer rounded-full border-blanco border-[2px] hover:bg-azul-hover transition duration-500"
             >
                 <FormattedMessage id="contactForm.button" defaultMessage="Enviar" />
             </button>

@@ -1,26 +1,25 @@
 import ExperienceCard from "../components/ExperienceCard";
 import { education, workExperience } from "../assets/lists/ExperienceList";
-import { resumeContainer, resumeTitle, resumeSubContainer, resumeExperience, resumeSubTitle, resumeExperienceCardContainer, resumeButton } from "../assets/styles/stylePages";
 import { FormattedMessage } from "react-intl";
 
 const Resume = () => {
     return (
-        <div id="resume" className={resumeContainer}>
-            <p className={resumeTitle}>
+        <div id="resume" className="flex flex-col items-center text-center bg-azul-negro text-blanco py-[20px]">
+            <p className="desktop:text-[40px] smartphone:text-[30px]">
                 <FormattedMessage 
                     id="resume.title" 
                     defaultMessage="Curriculum" 
                 />
             </p>
-            <div className={resumeSubContainer}>
-                <div className={resumeExperience}>
-                    <p className={resumeSubTitle}>
+            <div className="desktop:grid grid-cols-2 justify-items-center desktop:gap-x-[100px] smartphone:flex flex-col tablet:grid tablet:gap-x-[50px] laptop:gap-x-[0px]">
+                <div className="flex flex-col gap-[10px] mt-[10px]">
+                    <p className="text-[20px] text-center">
                         <FormattedMessage 
                             id="resume.education" 
                             defaultMessage="Educación" 
                         />
                     </p>
-                    <div className={resumeExperienceCardContainer}>
+                    <div className="flex flex-col justify-center items-center gap-[20px]">
                         {education?.map((ele, index) => {
                             return(
                                 <ExperienceCard key={index} company={ele.company} role={ele.role} date={ele.date} description={ele.description} certificate={ele.certificate} />
@@ -28,14 +27,14 @@ const Resume = () => {
                         })}
                     </div>
                 </div>
-                <div className={resumeExperience}>
-                    <p className={resumeSubTitle}>
+                <div className="flex flex-col gap-[10px] mt-[10px]">
+                    <p className="text-[20px] text-center">
                         <FormattedMessage 
                             id="resume.workExperience" 
                             defaultMessage="Experiencia Laboral" 
                         />
                     </p>
-                    <div className={resumeExperienceCardContainer}>
+                    <div className="flex flex-col justify-center items-center gap-[20px]">
                         {workExperience?.map((ele, index) => {
                             return(
                                 <ExperienceCard key={index} company={ele.company} role={ele.role} date={ele.date} description={ele.description} />
@@ -44,7 +43,7 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/LegalBrian/Portfolio/raw/main/src/assets/files/Brian%20Legal%20Curriculum.pdf" download className={resumeButton}>
+            <a href="https://github.com/LegalBrian/Portfolio/raw/main/src/assets/files/Brian%20Legal%20Curriculum.pdf" download className="flex flex-row text-center items-center mt-[10px] bg-negro justify-center gap-[10px] py-[10px] px-[10px] rounded-[30px] border-[2px] border-blanco hover:bg-azul-hover transition duration-500">
                 <>
                     <FormattedMessage 
                         id="resume.button" 

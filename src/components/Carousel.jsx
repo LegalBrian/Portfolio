@@ -6,7 +6,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Autoplay } from 'swiper';
 
-const Carrucel = ({ data }) => {
+const Carousel = ({ data }) => {
   return (
     <div className="container">
       <Swiper
@@ -55,4 +55,4 @@ const Carrucel = ({ data }) => {
   );
 }
 
-export default Carrucel;
+export default Carousel;

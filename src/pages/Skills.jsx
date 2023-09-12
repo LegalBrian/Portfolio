@@ -1,8 +1,7 @@
 
 import { FormattedMessage } from "react-intl";
-import Carrucel from "../components/Carrucel";
+import Carousel from "../components/Carousel";
 import { tech } from "../assets/lists/SkillsList";
-import { skillsContainer, skillsTitle, skillsListContainer, skillsCategoryContainer, skillsCategory, skillsCategoryTitle, skillsCategoryList, skillsCategoryItem, skillsCategoryItemIcon, skillsCategoryFirstItem } from "../assets/styles/stylePages";
 import { ReactComponent as JavaScript } from '../assets/svg/Javascript.svg';
 import { ReactComponent as TypeScript } from '../assets/svg/Typescript.svg';
 import { ReactComponent as NodeJS } from '../assets/svg/NodeJS.svg';
@@ -21,156 +20,160 @@ import { ReactComponent as Figma } from '../assets/svg/Figma.svg';
 import { ReactComponent as Excel } from '../assets/svg/Excel.svg';
 import { ReactComponent as Word } from '../assets/svg/Word.svg';
 
+export const skillsCategoryItemIcon = "w-[20px] h-[20px]";
+
+
+
 const Skills = () => {
     return (
-        <div id="skills" className={skillsContainer}>
-            <p className={skillsTitle}>
+        <div id="skills" className="flex flex-col justify-center items-center text-center bg-azul-negro-o text-blanco py-[20px]">
+            <p className="flex flex-col text-center desktop:text-[40px] smartphone:text-[30px]">
                 <FormattedMessage 
                     id="skills.title" 
                     defaultMessage="Habilidades" 
                 />
             </p>
-            <div className={skillsListContainer}>
-                <Carrucel data={tech} />
-                <div className={skillsCategoryContainer}>
-                    <div className={skillsCategory}>
-                        <p className={skillsCategoryTitle}>
+            <div className="flex flex-col justify-center items-center">
+                <Carousel data={tech} />
+                <div className="grid items-start gap-[20px] p-[20px] desktop:grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 smartphone-r:grid-cols-2 smartphone:grid-cols-1">
+                    <div className="flex flex-col justify-center gap-[15px]">
+                        <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle1" 
                                 defaultMessage="Lenguajes de programación" 
                             />
                         </p>
-                        <div className={skillsCategoryList}>
-                            <p className={skillsCategoryFirstItem}>
-                                <JavaScript className={skillsCategoryItemIcon}/>
+                        <div className="text-start">
+                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <JavaScript className="w-[20px] h-[20px]"/>
                                 JavaScript
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <TypeScript className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <TypeScript className="w-[20px] h-[20px]"/>
                                 TypeScript
                             </p>
                         </div>
                     </div>
-                    <div className={skillsCategory}>
-                        <p className={skillsCategoryTitle}>
+                    <div className="flex flex-col justify-center gap-[15px]">
+                        <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle2" 
                                 defaultMessage="Entorno de ejecución" 
                             />
                         </p>
-                        <div className={skillsCategoryList}>
-                            <p className={skillsCategoryFirstItem}>
-                                <NodeJS className={skillsCategoryItemIcon}/>
+                        <div className="text-start">
+                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <NodeJS className="w-[20px] h-[20px]"/>
                                 Node.js
                             </p>
                         </div>
                     </div>
-                    <div className={skillsCategory}>
-                        <p className={skillsCategoryTitle}>
+                    <div className="flex flex-col justify-center gap-[15px]">
+                        <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle3" 
                                 defaultMessage="Frameworks y librerias" 
                             />
                         </p>
-                        <div className={skillsCategoryList}>
-                            <p className={skillsCategoryFirstItem}>
-                                <React className={skillsCategoryItemIcon}/>
+                        <div className="text-start">
+                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <React className="w-[20px] h-[20px]"/>
                                 React.js
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <React className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <React className="w-[20px] h-[20px]"/>
                                 React Native
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <ExpressJS className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <ExpressJS className="w-[20px] h-[20px]"/>
                                 Express.js
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <Angular className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Angular className="w-[20px] h-[20px]"/>
                                 Angular
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <Tailwind className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Tailwind className="w-[20px] h-[20px]"/>
                                 Tailwind
                             </p>
                         </div>
                     </div>
-                    <div className={skillsCategory}>
-                        <p className={skillsCategoryTitle}>
+                    <div className="flex flex-col justify-center gap-[15px]">
+                        <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle4" 
                                 defaultMessage="Bases de datos" 
                             />
                         </p>
-                        <div className={skillsCategoryList}>
-                            <p className={skillsCategoryFirstItem}>
-                                <PostgreSQL className={skillsCategoryItemIcon}/>
+                        <div className="text-start">
+                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <PostgreSQL className="w-[20px] h-[20px]"/>
                                 PostgreSQL
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <MongoDB className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <MongoDB className="w-[20px] h-[20px]"/>
                                 MongoDB
                             </p>
                         </div>
                     </div>
-                    <div className={skillsCategory}>
-                        <p className={skillsCategoryTitle}>
+                    <div className="flex flex-col justify-center gap-[15px]">
+                        <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle5" 
                                 defaultMessage="Lenguajes de marcado y estilo" 
                             />
                         </p>
-                        <div className={skillsCategoryList}>
-                            <p className={skillsCategoryFirstItem}>
-                                <HTML className={skillsCategoryItemIcon}/>
+                        <div className="text-start">
+                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <HTML className="w-[20px] h-[20px]"/>
                                 HTML
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <CSS className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <CSS className="w-[20px] h-[20px]"/>
                                 CSS
                             </p>
                         </div>
                     </div>
-                    <div className={skillsCategory}>
-                        <p className={skillsCategoryTitle}>
+                    <div className="flex flex-col justify-center gap-[15px]">
+                        <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle6" 
                                 defaultMessage="Control de versiones" 
                             />
                         </p>
-                        <div className={skillsCategoryList}>
-                            <p className={skillsCategoryFirstItem}>
-                                <Git className={skillsCategoryItemIcon}/>
+                        <div className="text-start">
+                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Git className="w-[20px] h-[20px]"/>
                                 Git
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <Github className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Github className="w-[20px] h-[20px]"/>
                                 GitHub
                             </p>
                         </div>
                     </div>
-                    <div className={skillsCategory}>
-                        <p className={skillsCategoryTitle}>
+                    <div className="flex flex-col justify-center gap-[15px]">
+                        <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle7" 
                                 defaultMessage="Herramientas adicionales" 
                             />
                         </p>
-                        <div className={skillsCategoryList}>
-                            <p className={skillsCategoryFirstItem}>
-                                <Postman className={skillsCategoryItemIcon}/>
+                        <div className="text-start">
+                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Postman className="w-[20px] h-[20px]"/>
                                 Postman
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <Figma className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Figma className="w-[20px] h-[20px]"/>
                                 Figma
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <Excel className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Excel className="w-[20px] h-[20px]"/>
                                 Excel
                             </p>
-                            <p className={skillsCategoryItem}>
-                                <Word className={skillsCategoryItemIcon}/>
+                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                                <Word className="w-[20px] h-[20px]"/>
                                 Word
                             </p>
                         </div>

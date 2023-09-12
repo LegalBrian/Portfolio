@@ -1,5 +1,3 @@
-
-import { projectCardTechnologiesSvg } from '../styles/styleComponents';
 import { ReactComponent as JavaScript } from '../svg/Javascript.svg';
 import { ReactComponent as NodeJS } from '../svg/NodeJS.svg';
 import { ReactComponent as React } from '../svg/React.svg';
@@ -20,23 +18,23 @@ export const projects = [
         deploy: "",
         technologies: [
             {
-                svg: <React className={projectCardTechnologiesSvg}/>,
+                svg: <React className={"w-[60px] h-[60px]"}/>,
                 text: "React",
             },
             {
-                svg: <JavaScript className={projectCardTechnologiesSvg}/>,
+                svg: <JavaScript className={"w-[60px] h-[60px]"}/>,
                 text: "JavaScript",
             },
             {
-                svg: <Tailwind className={projectCardTechnologiesSvg}/>,
+                svg: <Tailwind className={"w-[60px] h-[60px]"}/>,
                 text: "Tailwind",
             },
             {
-                svg: <HTML className={projectCardTechnologiesSvg}/>,
+                svg: <HTML className={"w-[60px] h-[60px]"}/>,
                 text: "HTML",
             },
             {
-                svg: <CSS className={projectCardTechnologiesSvg}/>,
+                svg: <CSS className={"w-[60px] h-[60px]"}/>,
                 text: "CSS",
             },
         ],
@@ -49,35 +47,35 @@ export const projects = [
         deploy: "",
         technologies: [
             {
-                svg: <MongoDB className={projectCardTechnologiesSvg}/>,
+                svg: <MongoDB className={"w-[60px] h-[60px]"}/>,
                 text: "MongoDB",
             },
             {
-                svg: <ExpressJS className={projectCardTechnologiesSvg}/>,
+                svg: <ExpressJS className={"w-[60px] h-[60px]"}/>,
                 text: "ExpressJS",
             },
             {
-                svg: <React className={projectCardTechnologiesSvg}/>,
+                svg: <React className={"w-[60px] h-[60px]"}/>,
                 text: "React Native",
             },
             {
-                svg: <NodeJS className={projectCardTechnologiesSvg}/>,
+                svg: <NodeJS className={"w-[60px] h-[60px]"}/>,
                 text: "NodeJS",
             },
             {
-                svg: <JavaScript className={projectCardTechnologiesSvg}/>,
+                svg: <JavaScript className={"w-[60px] h-[60px]"}/>,
                 text: "JavaScript",
             },
             {
-                svg: <Tailwind className={projectCardTechnologiesSvg}/>,
+                svg: <Tailwind className={"w-[60px] h-[60px]"}/>,
                 text: "Tailwind",
             },
             {
-                svg: <HTML className={projectCardTechnologiesSvg}/>,
+                svg: <HTML className={"w-[60px] h-[60px]"}/>,
                 text: "HTML",
             },
             {
-                svg: <CSS className={projectCardTechnologiesSvg}/>,
+                svg: <CSS className={"w-[60px] h-[60px]"}/>,
                 text: "CSS",
             },
         ],
@@ -90,35 +88,35 @@ export const projects = [
         deploy: "",
         technologies: [
             {
-                svg: <PostgreSQL className={projectCardTechnologiesSvg}/>,
+                svg: <PostgreSQL className={"w-[60px] h-[60px]"}/>,
                 text: "PostgreSQL",
             },
             {
-                svg: <ExpressJS className={projectCardTechnologiesSvg}/>,
+                svg: <ExpressJS className={"w-[60px] h-[60px]"}/>,
                 text: "ExpressJS",
             },
             {
-                svg: <React className={projectCardTechnologiesSvg}/>,
+                svg: <React className={"w-[60px] h-[60px]"}/>,
                 text: "React.js",
             },
             {
-                svg: <NodeJS className={projectCardTechnologiesSvg}/>,
+                svg: <NodeJS className={"w-[60px] h-[60px]"}/>,
                 text: "NodeJS",
             },
             {
-                svg: <JavaScript className={projectCardTechnologiesSvg}/>,
+                svg: <JavaScript className={"w-[60px] h-[60px]"}/>,
                 text: "JavaScript",
             },
             {
-                svg: <Tailwind className={projectCardTechnologiesSvg}/>,
+                svg: <Tailwind className={"w-[60px] h-[60px]"}/>,
                 text: "Tailwind",
             },
             {
-                svg: <HTML className={projectCardTechnologiesSvg}/>,
+                svg: <HTML className={"w-[60px] h-[60px]"}/>,
                 text: "HTML",
             },
             {
-                svg: <CSS className={projectCardTechnologiesSvg}/>,
+                svg: <CSS className={"w-[60px] h-[60px]"}/>,
                 text: "CSS",
             },
         ],

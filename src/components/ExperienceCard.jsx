@@ -1,17 +1,16 @@
-import { experienceCardContainer, experienceCardCompany, experienceCardRole , experienceCardDate, experienceCardDescription, experienceCardCertificate} from "../assets/styles/styleComponents";
 import { FormattedMessage } from "react-intl";
 
 const ExperienceCard = ( { company, role, date, description, certificate } ) => {
     return(
-        <div className={experienceCardContainer}>
-            <p className={experienceCardCompany}>{company}</p>
-            <p className={experienceCardRole}>{role}</p>
-            <p className={experienceCardDate}>{date}</p>
-            <p className={experienceCardDescription}>{description}</p>
+        <div className="flex flex-col bg-negro-azul p-[30px] border-r-[4px] border-b-[4px] border-azul-hover rounded-[10px] gap-[5px] desktop:w-[500px] smartphone:w-[300px] smartphone-r:w-[460px] tablet:w-[300px]">
+            <p className="text-start text-blanco text-[20px]">{company}</p>
+            <p className="text-start text-azul-hover text-[25px]">{role}</p>
+            <p className="text-start text-azul-hover text-[13px]">{date}</p>
+            <p className="text-start text-blanco text-[15px]">{description}</p>
             {certificate ?
                 <a 
                     href={certificate} target="_blank" rel="noreferrer"
-                    className={experienceCardCertificate}
+                    className="flex flex-row justify-center text-center items-center gap-[5px] mt-[10px] bg-negro w-[130px] p-[5px] rounded-[30px] border-[2px] border-blanco hover:bg-azul-hover transition duration-500"
                 >
                     <>
                         <FormattedMessage 
