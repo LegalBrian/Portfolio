@@ -2,9 +2,8 @@ import logoB from "../assets/images/logo-blanco.png"
 import { useState, useContext } from "react";
 import { FormattedMessage } from "react-intl";
 import { langContext } from "../assets/context/langContext";
-import { ReactComponent as Spain } from '../assets/images/Spain.svg';
-import { ReactComponent as USA } from '../assets/images/USA.svg';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import SwitchLang from "./SwitchLang";
 
 const Header = () => {
 
@@ -39,17 +38,7 @@ return (
             <a href="/#contact" className="px-4 py-2 hover:text-azul-hover transition duration-500">
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
-            <div className="flex justify-center items-center gap-[10px] border-[1px] border-blanco rounded-[5px] p-[5px]">
-                <FormattedMessage className="px-4 py-2 hover:text-azul-hover transition duration-500" id="header.langOption" defaultMessage="IDIOMA" />
-                <div className="flex justify-center items-center gap-[10px]">
-                    <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? "opacity-100 rounded-full border-azul-oscuro border-[3px]" : "opacity-25"}`}>
-                        <Spain width="27" height="27"/>
-                    </button>
-                    <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? "opacity-100 rounded-full border-azul-oscuro border-[3px]" : "opacity-25"}`}>
-                        <USA width="27" height="27"/>
-                    </button>
-                </div>
-            </div>
+            <SwitchLang lang={ lang }/>
         </nav>
         <div onClick={handleNav} className="block desktop:hidden laptop:hidden">
             {nav ? <></> : <AiOutlineMenu size={30} className="p-[5px] border-[1px] border-blanco rounded-[6px]"/>}
@@ -74,17 +63,7 @@ return (
             <a href="/#contact" className="px-4 py-2 hover:text-azul-hover transition duration-500" onClick={handleNav}>
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
-            <div className="flex flex-col justify-center items-center gap-[5px]">
-                <FormattedMessage className="px-4 py-2 hover:text-azul-hover transition duration-500" id="header.langOption" defaultMessage="IDIOMA" />
-                <div className="flex justify-center items-center gap-[10px]">
-                    <button onClick={() => lang.setLang("es-AR")} className={`${lang.currentLang === "es-AR" ? "opacity-100 rounded-full border-azul-oscuro border-[3px]" : "opacity-25"}`}>
-                        <Spain width="27" height="27"/>
-                    </button>
-                    <button onClick={() => lang.setLang("en-US")} className={`${lang.currentLang === "en-US" ? "opacity-100 rounded-full border-azul-oscuro border-[3px]" : "opacity-25"}`}>
-                        <USA width="27" height="27"/>
-                    </button>
-                </div>
-            </div>
+            <SwitchLang lang={lang} />
         </nav>
     </div>
   );
