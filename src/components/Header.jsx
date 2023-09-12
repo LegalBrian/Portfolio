@@ -4,6 +4,7 @@ import { FormattedMessage } from "react-intl";
 import { langContext } from "../assets/context/langContext";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import SwitchLang from "./SwitchLang";
+// import SwitchTheme from "./SwitchTheme";
 
 const Header = () => {
 
@@ -19,26 +20,27 @@ return (
         <a href="/">
             <img src={logoB} className="w-16 h-16" alt="Logo" />
         </a>
-        <nav className="hidden desktop:flex laptop:flex items-center justify-center">
-            <a href="/#home" className="px-4 py-2 hover:text-azul-hover transition duration-500">
+        <nav className="hidden gap-4 desktop:flex laptop:flex items-center justify-center">
+            <a href="/#home" className="py-2 hover:text-azul-hover transition duration-500">
                 <FormattedMessage id="header.home" defaultMessage="INICIO" />
             </a>
-            <a href="/#about" className="px-4 py-2 hover:text-azul-hover transition duration-500">
+            <a href="/#about" className="py-2 hover:text-azul-hover transition duration-500">
                 <FormattedMessage id="header.about" defaultMessage="SOBRE MÍ" />
             </a>
-            <a href="/#skills" className="px-4 py-2 hover:text-azul-hover transition duration-500">                    
+            <a href="/#skills" className="py-2 hover:text-azul-hover transition duration-500">                    
                 <FormattedMessage id="header.skills" defaultMessage="HABILIDADES" />
             </a>
-            <a href="/#resume" className="px-4 py-2 hover:text-azul-hover transition duration-500">
+            <a href="/#resume" className="py-2 hover:text-azul-hover transition duration-500">
                 <FormattedMessage id="header.resume" defaultMessage="CURRICULUM" />
             </a>
-            <a href="/#projects" className="px-4 py-2 hover:text-azul-hover transition duration-500">
+            <a href="/#projects" className="py-2 hover:text-azul-hover transition duration-500">
                 <FormattedMessage id="header.projects" defaultMessage="PROYECTOS" />
             </a>
-            <a href="/#contact" className="px-4 py-2 hover:text-azul-hover transition duration-500">
+            <a href="/#contact" className="py-2 hover:text-azul-hover transition duration-500">
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
             <SwitchLang lang={ lang }/>
+            {/* <SwitchTheme/> */}
         </nav>
         <div onClick={handleNav} className="block desktop:hidden laptop:hidden">
             {nav ? <></> : <AiOutlineMenu size={30} className="p-[5px] border-[1px] border-blanco rounded-[6px]"/>}
@@ -63,7 +65,8 @@ return (
             <a href="/#contact" className="px-4 py-2 hover:text-azul-hover transition duration-500" onClick={handleNav}>
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
-            <SwitchLang lang={lang} />
+            <SwitchLang lang={lang}/>
+            {/* <SwitchTheme/> */}
         </nav>
     </div>
   );
