@@ -11,7 +11,7 @@ const Projects = () => {
                     defaultMessage="Proyectos" 
                 />
             </p>
-            <div className="desktop:grid grid-cols-2 justify-items-center desktop:gap-x-[100px] smartphone:flex flex-col tablet:grid grid-cols-2 justify-items-center tablet:gap-x-[50px] laptop:gap-x-[100px]">
+            <div className="desktop:grid grid-cols-2 justify-items-center desktop:gap-x-[100px] smartphone:flex flex-col tablet:grid tablet:gap-x-[50px] laptop:gap-x-[100px]">
                 {projects.map((ele, index) => {
                     return (
                         <ProjectsCard key={index} title={ele.title} image={ele.image} videoId={ele.videoId} repo={ele.repo} deploy={ele.deploy} technologies={ele.technologies} />
