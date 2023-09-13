@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ReactComponent as Arrow } from '../assets/images/arrow.svg';
+import { ReactComponent as Arrow } from '../assets/images/Arrow.svg';
 import { animateScroll as scroll } from 'react-scroll';
 
 const ScrollToTopButton = () => {
@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
     <button
       id="btnScrollToTop"
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 p-2 rounded-full flex items-center justify-center bg-azul-hover w-[50px] h-[50px] transition-opacity duration-1000 ${
+      className={`fixed bottom-4 right-4 p-2 rounded-full flex items-center justify-center bg-azul w-[50px] h-[50px] transition-opacity duration-1000 ${
         isVisible ? 'block' : 'hidden'
       }`}
     >

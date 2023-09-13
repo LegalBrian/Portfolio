@@ -4,7 +4,7 @@ import { FormattedMessage } from "react-intl";
 
 const Projects = () => {
     return (
-        <div id="projects" className="flex flex-col text-center items-center bg-azul-negro-o text-blanco py-[20px]">
+        <div id="projects" className="flex flex-col text-center items-center">
             <p className="desktop:text-[40px] smartphone:text-[30px]">
                 <FormattedMessage 
                     id="projects.title" 

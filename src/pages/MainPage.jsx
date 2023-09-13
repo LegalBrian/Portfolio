@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import Home from "./Home";
-import About from "./About";
 import Skills from "./Skills";
 import Resume from "./Resume";
 import Projects from "./Projects";
@@ -8,13 +7,12 @@ import Contact from "./Contact";
 import Footer from "../components/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
-const Landing = () => {
+const MainPage = () => {
     return(
-        <div>
+        <div className="flex flex-col gap-5 transition-all duration-500 bg-blanco text-negro dark:bg-azul-oscuro dark:text-blanco">
             <ScrollToTopButton/>
             <Header/>
             <Home/>
-            <About/>
             <Skills/>
             <Resume/>
             <Projects/>
@@ -24,4 +22,4 @@ const Landing = () => {
     )
 }
 
-export default Landing;
+export default MainPage;

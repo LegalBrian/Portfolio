@@ -1,22 +1,17 @@
 {
     "header.home": "HOME",
-    "header.about": "ABOUT ME",
     "header.skills": "SKILLS",
     "header.resume": "RESUME",
     "header.projects": "PROJECTS",
     "header.contact": "CONTACT",
     "header.langOption": "LANGUAGE",
 
-    "error404.title1": "Error 404:",
-    "error404.title2": "Page not found!",
-
     "experienceCard.button": "Certificate",
 
     "projectcard.buttonRepository": "Repository",
     "projectcard.buttonDeploy": "Deploy",
     
-    "about.title": "About Me",
-    "about.description": "Hi, my name is Brian Legal and I am a Full Stack Web Developer from Buenos Aires, Argentina. I think of myself as a passionate developer who is constantly learning, loves challenging projects, and is always looking for opportunities to expand their skills and knowledge. In my free time, I enjoy exploring new technologies, as I am truly fascinated by them. I can say for sure that I am ready to learn and grow as a developer, as well as to face any challenge that lies ahead.",
+    "about.description": "Hi, my name is Brian Legal and I live in Buenos Aires, Argentina. I consider myself a passionate developer who is constantly learning, I love challenging projects and I'm always looking for opportunities to expand my skills and knowledge.",
 
     "contact.title": "Contact",
     "contact.description": "If you are interested in my work and would like to discuss a potential collaboration, feel free to visit my professional profiles on LinkedIn and GitHub to learn more about my experience and skills. You can also contact me via email or WhatsApp to discuss a project or work opportunity. I look forward to hearing from you soon and working together in the future!",
@@ -31,7 +26,7 @@
     "resume.title": "Resume",
     "resume.education": "Education",
     "resume.workExperience": "Work Experience",
-    "resume.button": "Download Resume",
+    "resume.button": "Resume",
 
     "skills.title": "Skills",
     "skills.tech": "Tech Skills",

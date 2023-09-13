@@ -26,7 +26,7 @@ export const skillsCategoryItemIcon = "w-[20px] h-[20px]";
 
 const Skills = () => {
     return (
-        <div id="skills" className="flex flex-col justify-center items-center text-center bg-azul-negro-o text-blanco py-[20px]">
+        <div id="skills" className="flex flex-col justify-center items-center text-center">
             <p className="flex flex-col text-center desktop:text-[40px] smartphone:text-[30px]">
                 <FormattedMessage 
                     id="skills.title" 
@@ -44,11 +44,11 @@ const Skills = () => {
                             />
                         </p>
                         <div className="text-start">
-                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <JavaScript className="w-[20px] h-[20px]"/>
                                 JavaScript
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <TypeScript className="w-[20px] h-[20px]"/>
                                 TypeScript
                             </p>
@@ -62,7 +62,7 @@ const Skills = () => {
                             />
                         </p>
                         <div className="text-start">
-                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <NodeJS className="w-[20px] h-[20px]"/>
                                 Node.js
                             </p>
@@ -72,27 +72,27 @@ const Skills = () => {
                         <p className="text-[20px]">
                             <FormattedMessage 
                                 id="skills.categoryTitle3" 
-                                defaultMessage="Frameworks y librerias" 
+                                defaultMessage="Frameworks y librerías" 
                             />
                         </p>
                         <div className="text-start">
-                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <React className="w-[20px] h-[20px]"/>
                                 React.js
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <React className="w-[20px] h-[20px]"/>
                                 React Native
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <ExpressJS className="w-[20px] h-[20px]"/>
                                 Express.js
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Angular className="w-[20px] h-[20px]"/>
                                 Angular
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Tailwind className="w-[20px] h-[20px]"/>
                                 Tailwind
                             </p>
@@ -106,11 +106,11 @@ const Skills = () => {
                             />
                         </p>
                         <div className="text-start">
-                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <PostgreSQL className="w-[20px] h-[20px]"/>
                                 PostgreSQL
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <MongoDB className="w-[20px] h-[20px]"/>
                                 MongoDB
                             </p>
@@ -124,11 +124,11 @@ const Skills = () => {
                             />
                         </p>
                         <div className="text-start">
-                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <HTML className="w-[20px] h-[20px]"/>
                                 HTML
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <CSS className="w-[20px] h-[20px]"/>
                                 CSS
                             </p>
@@ -142,11 +142,11 @@ const Skills = () => {
                             />
                         </p>
                         <div className="text-start">
-                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Git className="w-[20px] h-[20px]"/>
                                 Git
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Github className="w-[20px] h-[20px]"/>
                                 GitHub
                             </p>
@@ -160,19 +160,19 @@ const Skills = () => {
                             />
                         </p>
                         <div className="text-start">
-                            <p className="border-y-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Postman className="w-[20px] h-[20px]"/>
                                 Postman
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Figma className="w-[20px] h-[20px]"/>
                                 Figma
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Excel className="w-[20px] h-[20px]"/>
                                 Excel
                             </p>
-                            <p className="border-b-[1px] pl-[20px] border-blanco flex flex-row gap-[5px] py-[5px]">
+                            <p className="border-b-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Word className="w-[20px] h-[20px]"/>
                                 Word
                             </p>

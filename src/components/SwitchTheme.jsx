@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { ReactComponent as Sun } from '../assets/images/sun.svg';
-import { ReactComponent as Moon } from '../assets/images/moon.svg';
+import { ReactComponent as Sun } from '../assets/images/Sun.svg';
+import { ReactComponent as Moon } from '../assets/images/Moon.svg';
 
 const SwitchTheme = ( ) => {
 
@@ -24,12 +24,12 @@ const SwitchTheme = ( ) => {
     };
 
     return (
-        <button onClick={handleChangeTheme} className={`flex w-16 h-8 rounded-full transition-all duration-500 cursor-pointer ${theme === "light" ? "bg-negro" : "bg-blanco"}`}>
+        <button onClick={handleChangeTheme} className={`flex w-16 h-8 rounded-full transition-all duration-500 cursor-pointer ${theme === "light" ? "bg-element-dark" : "bg-element-light"}`}>
             {
                 theme === "light" ?
-                <Sun fill="black" className={`bg-blanco shadow-2xl h-8 w-8 rounded-full`}/>
+                <Sun fill="rgba(0,0,25,1)" className={`bg-element-light shadow-2xl h-8 w-8 rounded-full`}/>
                 :
-                <Moon fill="white" className={`bg-negro shadow-2xl h-8 w-8 rounded-full ml-8`}/>
+                <Moon fill="rgba(128,191,255,1)" className={`bg-element-dark shadow-2xl h-8 w-8 rounded-full ml-8`}/>
             }
         </button>
     );

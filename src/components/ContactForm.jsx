@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FormattedMessage } from 'react-intl';
+import { ReactComponent as Send } from '../assets/images/Send.svg';
 
 const ContactForm = () => {
   const [nombre, setNombre] = useState('');
@@ -8,7 +9,7 @@ const ContactForm = () => {
   const [mensaje, setMensaje] = useState('');
 
   return (
-    <form action="https://formsubmit.co/bfdc8398c85a9753d009bc77d90cffe0" method="POST" className="bg-negro rounded-[10px] w-5/6 flex flex-col p-[20px] mt-[25px]">
+    <form action="https://formsubmit.co/bfdc8398c85a9753d009bc77d90cffe0" method="POST" className="bg-element-light dark:bg-element-dark rounded-[10px] w-5/6 flex flex-col p-[20px] mt-[25px]">
         <div className="grid grid-cols-2 p-[20px] gap-[20px] smartphone:grid-cols-1 smartphone-r:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2">
             <div>
                 <div className="flex flex-col gap-[10px]">
@@ -22,7 +23,7 @@ const ContactForm = () => {
                         value={nombre}
                         onChange={(e) => setNombre(e.target.value)}
                         required
-                        className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
+                        className="w-full px-4 py-2 mb-4 border-azul border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
                     />
                 </div>
                 <div className="flex flex-col gap-[10px]">
@@ -36,7 +37,7 @@ const ContactForm = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
+                        className="w-full px-4 py-2 mb-4 border-azul border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
                     />
                 </div>
                 <div className="flex flex-col gap-[10px]">
@@ -50,7 +51,7 @@ const ContactForm = () => {
                         value={asunto}
                         onChange={(e) => setAsunto(e.target.value)}
                         required
-                        className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
+                        className="w-full px-4 py-2 mb-4 border-azul border-b-[1px] rounded bg-transparent outline-none focus:outline-azul-hover focus:border-transparent"
                     />
                 </div>
             </div>
@@ -65,16 +66,17 @@ const ContactForm = () => {
                     onChange={(e) => setMensaje(e.target.value)}
                     required
                     maxlength="500"
-                    className="w-full px-4 py-2 mb-4 border-azul-hover border-b-[1px] border-r-[1px] rounded bg-transparent resize-none h-full outline-none focus:outline-azul-hover focus:border-transparent smartphone:h-[150px] smartphone-r:h-[150px] tablet:h-full laptop:h-full desktop:h-full"
+                    className="w-full px-4 py-2 mb-4 border-azul border-b-[1px] border-r-[1px] rounded bg-transparent resize-none h-full outline-none focus:outline-azul-hover focus:border-transparent smartphone:h-[150px] smartphone-r:h-[150px] tablet:h-full laptop:h-full desktop:h-full"
                 ></textarea>
             </div>
         </div>
         <div className="flex justify-center items-center">
             <button
                 type="submit"
-                className="items-center text-[20px] w-[100px] h-[40px] bg-negro cursor-pointer rounded-full border-blanco border-[2px] hover:bg-azul-hover transition duration-500"
+                className="flex flex-row justify-center text-center items-center gap-[5px] mt-[10px] bg-azul text-blanco w-[130px] p-[5px] rounded-[10px] hover:bg-azul-hover transition duration-500"
             >
                 <FormattedMessage id="contactForm.button" defaultMessage="Enviar" />
+                <Send width="20" height="20" fill="white"/>
             </button>
         </div>
         <input type="hidden" name="_next" value="http://legalbrian.vercel.app" />

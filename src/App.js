@@ -1,15 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './pages/Landing';
-import Page404 from './pages/Page404';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/*" element={<Page404 />} />
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Router>
   );
 }
 

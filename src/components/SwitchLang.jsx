@@ -13,7 +13,7 @@ const SwitchLang = ( { lang } ) => {
     }
 
     return (
-        <button onClick={() => changeLang()} className={`flex w-16 h-8 rounded-full transition-all duration-500 cursor-pointer ${lang.currentLang === "es-AR" ? "bg-rojo" : "bg-azul-hover"}`}>
+        <button onClick={() => changeLang()} className={`flex w-16 h-8 rounded-full transition-all duration-300 cursor-pointer ${lang.currentLang === "es-AR" ? "bg-spain" : "bg-usa"}`}>
             {
                 lang.currentLang === "es-AR" ?
                 <Spain className={`shadow-2xl h-8 w-8 rounded-full`}/>
