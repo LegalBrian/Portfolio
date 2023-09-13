@@ -35,7 +35,7 @@ const Skills = () => {
             </p>
             <div className="flex flex-col justify-center items-center">
                 <Carousel data={tech} />
-                <div className="grid items-start gap-[20px] p-[20px] desktop:grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 smartphone-r:grid-cols-2 smartphone:grid-cols-1">
+                <div className="grid items-start gap-5 p-5 desktop:grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 smartphone-r:grid-cols-2 smartphone:grid-cols-1">
                     <div className="flex flex-col justify-center gap-[15px]">
                         <p className="text-[20px]">
                             <FormattedMessage 

@@ -18,9 +18,9 @@ const Carousel = ({ data }) => {
         slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
-          stretch: 20,
-          depth: 200,
-          modifier: 1.2,
+          stretch: 10,
+          depth: 150,
+          modifier: 2,
         }}
         autoplay={{
           delay: 2000,
@@ -29,15 +29,12 @@ const Carousel = ({ data }) => {
         breakpoints={{
           480: {
             slidesPerView: 2,
-            spaceBetween: 20
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 30
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 40
           },
         }}
         className='swiper_container'
