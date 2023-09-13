@@ -9,20 +9,20 @@ import Button from '../components/Button';
 
 const Contact = () => {
     return (
-        <div id="contact" className="flex flex-col justify-center items-center text-center gap-[10px] desktop:px-[40px] smartphone:px-[20px]">
-            <h2 className="desktop:text-[40px] smartphone:text-[30px]">
+        <div id="contact" className="flex flex-col justify-center items-center text-center gap-5">
+            <h2 className="desktop:text-4xl smartphone:text-3xl">
                 <FormattedMessage 
                     id="contact.title" 
                     defaultMessage="Contacto" 
                 />
             </h2>
-            <p className="desktop:text-[20px] smartphone:text-[15px]">
+            <p className="text-xl mx-10">
                 <FormattedMessage 
                     id="contact.description" 
                     defaultMessage="Si estás interesado en mi trabajo y te gustaría discutir una posible colaboración, no dudes en visitar mis perfiles profesionales en LinkedIn y GitHub para obtener más información sobre mi experiencia y habilidades. También puedes contactarme por correo electrónico o WhatsApp para hablar sobre un proyecto o una oportunidad laboral. ¡Espero tener noticias tuyas pronto y trabajar juntos en el futuro!" 
                 />
             </p>
-            <div className="flex desktop:flex-row justify-evenly smartphone:flex-wrap gap-[20px]">
+            <div className="flex justify-evenly gap-5 mx-5 desktop:flex-row smartphone:flex-wrap">
                 <Button 
                     Href={"https://www.linkedin.com/in/legal-brian/"} 
                     TextId={"contact.linkedin"} 

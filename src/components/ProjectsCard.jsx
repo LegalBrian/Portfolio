@@ -4,7 +4,7 @@ import { ReactComponent as Redirect } from '../assets/images/Redirect.svg';
 
 const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
     return(
-        <div className="flex flex-col justify-center items-center bg-element-light dark:bg-element-dark p-[20px] border-r-[4px] border-b-[4px] border-azul rounded-[10px] gap-[20px] my-[20px] desktop:w-[500px] smartphone:w-[300px] smartphone-r:w-[460px] tablet:w-[300px]">
+        <div className="flex flex-col justify-center items-center bg-element-light dark:bg-element-dark p-[20px] border-r-[4px] border-b-[4px] border-azul rounded-[10px] gap-[20px] my-[20px] desktop:w-[500px] smartphone:w-[350px] smartphone-r:w-[450px] tablet:w-[350px]">
             {videoId ?
             <YouTubeVideo videoId={videoId}/>
             :

@@ -3,19 +3,30 @@ import { FormattedMessage } from 'react-intl';
 
 const Home = () => {
     return (
-        <div id="home" className="flex justify-evenly">
-            <div className="flex flex-col items-center justify-center rounded-[40px] my-[20px] gap-[10px]">
-                <img src={foto} alt="" className=" rounded-ss-[30px] rounded-es-[90px] rounded-se-[90px] border-azul  border-[8px] desktop:h-[250px] desktop:w-[250px] smartphone:w-[200px] smartphone:h-[200px]"/>
-                <p className="text-center desktop:text-[40px] smartphone:text-[30px]">BRIAN LEGAL</p>
-                <p className="text-center text-[20px]">Full Stack Web Developer</p>
+        <div id="home" className="flex justify-evenly items-center gap-10 m-5 desktop:flex-row laptop:flex-row smartphone:flex-col">
+            <div className="flex flex-col items-center gap-5">
+                <img src={foto} alt="" className=" rounded-ss-[30px] rounded-es-[90px] rounded-se-[90px] border-azul border-8 desktop:h-[300px] desktop:w-[300px] smartphone:w-[250px] smartphone:h-[250px]"/>
+                <p className="text-center desktop:text-6xl smartphone:text-5xl">BRIAN LEGAL</p>
+                <p className="text-center text-3xl">Full Stack Web Developer</p>
             </div>
-            <div className="flex flex-col w-[600px] justify-center items-center text-start desktop:px-[40px] smartphone:px-[20px]">
-                <p className="desktop:text-[20px] smartphone:text-[15px]">
-                    <FormattedMessage 
-                        id="about.description"
-                        defaultMessage="Hola, mi nombre es Brian Legal vivo en Buenos Aires, Argentina. Me considero un desarrollador apasionado que está en constante aprendizaje, me encantan los proyectos desafiantes y siempre busco oportunidades para expandir mis habilidades y conocimientos."
-                    />
-                </p>
+            <div className="desktop:w-[500px] desktop:text-start desktop:text-2xl laptop:w-[400px] laptop:text-start laptop:text-2xl smartphone:text-xl smartphone:text-center">
+                <FormattedMessage 
+                    id="about.description1"
+                    defaultMessage="Hola, mi nombre es Brian Legal vivo en Buenos Aires, Argentina."
+                />
+                <br/>
+                <br/>
+                <FormattedMessage 
+                    id="about.description2"
+                    defaultMessage="Me considero un desarrollador apasionado que está en constante aprendizaje."
+                />
+                <br/>
+                <br/>
+                <FormattedMessage 
+                    id="about.description2"
+                    defaultMessage="Me encantan los proyectos desafiantes y siempre busco oportunidades para expandir mis habilidades y conocimientos."
+                />
+                
             </div>
         </div>
     )

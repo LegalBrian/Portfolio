@@ -27,7 +27,7 @@ export const skillsCategoryItemIcon = "w-[20px] h-[20px]";
 const Skills = () => {
     return (
         <div id="skills" className="flex flex-col justify-center items-center text-center">
-            <p className="flex flex-col text-center desktop:text-[40px] smartphone:text-[30px]">
+            <p className="desktop:text-4xl smartphone:text-3xl">
                 <FormattedMessage 
                     id="skills.title" 
                     defaultMessage="Habilidades" 
@@ -152,8 +152,8 @@ const Skills = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center gap-[15px]">
-                        <p className="text-[20px]">
+                    <div className="flex flex-col justify-center gap-5">
+                        <p className="text-xl">
                             <FormattedMessage 
                                 id="skills.categoryTitle7" 
                                 defaultMessage="Herramientas adicionales" 
