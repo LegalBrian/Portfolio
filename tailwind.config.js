@@ -18,10 +18,6 @@ module.exports = {
       },
       colors: {
         "negro": "rgba(0,0,0,1)",
-        "negro-t": "rgba(0,0,25,0.7)",
-        "azul-negro-o": "rgba(0,0,50,1)",
-        "azul-negro" : "rgba(0,0,75,1)",
-        
         "azul-hover": "rgba(5,180,250,1)",
         "element-dark": "rgba(0,0,25,1)",
         "element-light": "rgba(128,191,255,1)",

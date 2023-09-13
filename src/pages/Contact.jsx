@@ -34,7 +34,7 @@ const Contact = () => {
                 <Button 
                     Href={"https://github.com/LegalBrian"} 
                     TextId={"contact.github"} 
-                    defaultMessage={"Github"} 
+                    defaultMessage={"GitHub"} 
                     Svg={Github} 
                     SvgS={"20"} 
                     SvgF={"white"}

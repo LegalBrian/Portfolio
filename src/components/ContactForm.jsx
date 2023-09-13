@@ -65,7 +65,7 @@ const ContactForm = () => {
                     value={mensaje}
                     onChange={(e) => setMensaje(e.target.value)}
                     required
-                    maxlength="500"
+                    maxLength="500"
                     className="w-full px-4 py-2 mb-4 border-azul border-b-[1px] border-r-[1px] rounded bg-transparent resize-none h-full outline-none focus:outline-azul-hover focus:border-transparent smartphone:h-[150px] smartphone-r:h-[150px] tablet:h-full laptop:h-full desktop:h-full"
                 ></textarea>
             </div>
