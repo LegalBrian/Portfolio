@@ -1,7 +1,9 @@
-import logoB from "../assets/images/logo-blanco.png"
+import logoB from "../assets/images/logo-blanco.png";
+import logoN from "../assets/images/logo-negro.png";
 import { useState, useContext } from "react";
 import { FormattedMessage } from "react-intl";
 import { langContext } from "../assets/context/langContext";
+import { themeContext } from "../assets/context/themeContext";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import SwitchLang from "./SwitchLang";
 import SwitchTheme from "./SwitchTheme";
@@ -9,6 +11,8 @@ import SwitchTheme from "./SwitchTheme";
 const Header = () => {
 
     const lang = useContext(langContext);
+    const theme = useContext(themeContext)
+
     const [nav, setNav] = useState(false);
 
     const handleNav = () => {
@@ -18,7 +22,12 @@ const Header = () => {
 return (
     <div className="flex justify-between items-center h-[80px] px-4 text-blanc">
         <a href="/">
-            <img src={logoB} className="w-16 h-16" alt="Logo" />
+            {
+                theme.currentTheme === "dark" ?
+                <img src={logoB} className="w-16 h-16" alt="Logo" />
+                :
+                <img src={logoN} className="w-16 h-16" alt="Logo" />
+            }
         </a>
         <nav className="hidden gap-4 desktop:flex laptop:flex items-center justify-center">
             <a href="/#home" className="py-2 hover:text-azul-hover">
@@ -37,7 +46,7 @@ return (
                 <FormattedMessage id="header.contact" defaultMessage="CONTACTO" />
             </a>
             <SwitchLang lang={ lang }/>
-            <SwitchTheme/>
+            <SwitchTheme theme={theme}/>
         </nav>
         <div onClick={handleNav} className="block desktop:hidden laptop:hidden">
             {nav ? <></> : <AiOutlineMenu size={30} className="p-[5px] border-[1px] border-negro bg-element-light dark:border-blanco dark:bg-element-dark rounded-[6px]"/>}
@@ -46,7 +55,7 @@ return (
             <AiOutlineClose size={30} onClick={handleNav} className="absolute top-[25px] right-[15px] self-end p-[5px] border-[1px] border-negro dark:border-blanco rounded-[6px]"/>
             <div className="flex flex-row gap-5">
                 <SwitchLang lang={lang}/>
-                <SwitchTheme/>
+                <SwitchTheme theme={theme}/>
             </div>
             <a href="/#home" className="px-4 py-2 hover:text-azul-hover" onClick={handleNav}>
                 <FormattedMessage id="header.home" defaultMessage="INICIO" />

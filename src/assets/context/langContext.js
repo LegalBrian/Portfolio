@@ -6,26 +6,26 @@ import MessagesSpanish from "../lang/es-AR.json";
 const langContext = React.createContext();
 
 const LangProvider = ({ children }) => {
-    let localeDefalut;
+    let localeDefault;
     let messagesDefault;
 
     const lang = localStorage.getItem("lang");
 
     if(lang){
-        localeDefalut = lang;
+        localeDefault = lang;
         
         if(lang === "es-AR"){
             messagesDefault = MessagesSpanish;
         } else if(lang === "en-US"){
             messagesDefault = MessagesEnglish;
         } else {
-            localeDefalut = "es-AR"
+            localeDefault = "es-AR"
             messagesDefault = MessagesSpanish;
         }
     }
 
     const [ messages, setMessages ] = useState(messagesDefault);
-    const [ locale, setLocale ] = useState(localeDefalut)
+    const [ locale, setLocale ] = useState(localeDefault)
     
     const setLang = (lang) => {
         switch(lang){

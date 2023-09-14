@@ -1,32 +1,32 @@
-import { useEffect, useState } from "react";
+import React, {useEffect} from "react";
 import { ReactComponent as Sun } from '../assets/images/Sun.svg';
 import { ReactComponent as Moon } from '../assets/images/Moon.svg';
 
-const SwitchTheme = ( ) => {
-
-    const [theme, setTheme] = useState(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
-    } else {
-        return "light";
-    }});
+const SwitchTheme = ( { theme } ) => {
 
     useEffect(() => {
-        if (theme === "dark") {
+        if (theme.currentTheme === "dark") {
             document.querySelector("html").classList.add("dark");
-        } else {
+        } else if (theme.currentTheme === "light") {
             document.querySelector("html").classList.remove("dark");
+        } else {
+            document.querySelector("html").classList.add("dark");
         }
-    }, [theme]);
+    }, [theme.currentTheme]);
 
-    const handleChangeTheme = () => {
-        setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    };
-
+    const changeTheme = () => {
+        if (theme.currentTheme === "dark"){
+            theme.setTheme("light");
+        }
+        else{
+            theme.setTheme("dark");
+        }
+    }
+    
     return (
-        <button onClick={handleChangeTheme} className={`flex w-16 h-8 rounded-full transition-all duration-500 cursor-pointer ${theme === "light" ? "bg-element-dark" : "bg-element-light"}`}>
+        <button onClick={() => changeTheme()} className={`flex w-16 h-8 rounded-full transition-all duration-500 cursor-pointer ${theme.currentTheme === "light" ? "bg-element-dark" : "bg-element-light"}`}>
             {
-                theme === "light" ?
+                theme.currentTheme === "light" ?
                 <Sun fill="rgba(0,0,25,1)" className={`bg-element-light shadow-2xl h-8 w-8 rounded-full`}/>
                 :
                 <Moon fill="rgba(128,191,255,1)" className={`bg-element-dark shadow-2xl h-8 w-8 rounded-full ml-8`}/>

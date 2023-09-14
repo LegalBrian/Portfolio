@@ -15,12 +15,10 @@ const Home = () => {
                     defaultMessage="Hola, mi nombre es Brian Legal vivo en Buenos Aires, Argentina."
                 />
                 <br/>
-                <br/>
                 <FormattedMessage 
                     id="about.description2"
                     defaultMessage="Me considero un desarrollador apasionado que está en constante aprendizaje."
                 />
-                <br/>
                 <br/>
                 <FormattedMessage 
                     id="about.description2"
