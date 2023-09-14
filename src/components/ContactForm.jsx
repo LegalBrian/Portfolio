@@ -73,7 +73,7 @@ const ContactForm = () => {
         <div className="flex justify-center items-center">
             <button
                 type="submit"
-                className="flex flex-row justify-center text-center items-center gap-[5px] mt-[10px] bg-azul text-blanco w-[130px] p-[5px] rounded-[10px] hover:bg-azul-hover transition duration-500"
+                className="flex flex-row justify-center text-center items-center font-handjet text-xl gap-[5px] mt-[10px] bg-azul text-blanco w-[130px] p-[5px] rounded-[10px] hover:bg-azul-hover transition duration-500"
             >
                 <FormattedMessage id="contactForm.button" defaultMessage="Enviar" />
                 <Send width="20" height="20" fill="white"/>

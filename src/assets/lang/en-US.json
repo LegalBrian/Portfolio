@@ -48,5 +48,8 @@
     "experienceList.education.FullStackWebDeveloper.date": "oct 2022 - feb 2023",
 
     "experienceList.workExperience.ReactNativeDeveloper.description" : "I developed a mobile application together with a group of 7 people aimed at an NGO called 'Find a Home.' The purpose of the app is to facilitate the adoption of animals in need of a home and allow users to post about lost animals.",
-    "experienceList.workExperience.ReactNativeDeveloper.date": "jan 2023 - feb 2023"
+    "experienceList.workExperience.ReactNativeDeveloper.date": "jan 2023 - feb 2023",
+
+    "experienceList.workExperience.freelanceDeveloper.description" : "I handle the development and styling of websites and mobile applications. I work directly with clients to turn their ideas into something real and functional.",
+    "experienceList.workExperience.freelanceDeveloper.date": "feb 2023 - present"
 }

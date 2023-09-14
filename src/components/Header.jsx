@@ -20,7 +20,7 @@ const Header = () => {
     };
 
 return (
-    <div className="flex justify-between items-center h-[80px] px-4 text-blanc">
+    <div className="flex justify-between items-center h-[80px] px-4">
         <a href="/">
             {
                 theme.currentTheme === "dark" ?

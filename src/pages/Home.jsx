@@ -6,10 +6,10 @@ const Home = () => {
         <div id="home" className="flex justify-evenly items-center gap-10 m-5 desktop:flex-row laptop:flex-row smartphone:flex-col">
             <div className="flex flex-col items-center gap-5">
                 <img src={foto} alt="" className=" rounded-ss-[30px] rounded-es-[90px] rounded-se-[90px] border-azul border-8 desktop:h-[300px] desktop:w-[300px] smartphone:w-[250px] smartphone:h-[250px]"/>
-                <p className="text-center desktop:text-6xl smartphone:text-5xl">BRIAN LEGAL</p>
-                <p className="text-center text-3xl">Full Stack Web Developer</p>
+                <p className="text-center desktop:text-7xl smartphone:text-5xl font-teko">BRIAN LEGAL</p>
+                <p className="text-center text-4xl font-teko">Full Stack Web Developer</p>
             </div>
-            <div className="desktop:w-[500px] desktop:text-start desktop:text-2xl laptop:w-[400px] laptop:text-start laptop:text-2xl smartphone:text-xl smartphone:text-center">
+            <div className="desktop:w-[500px] desktop:text-start desktop:text-3xl laptop:w-[400px] laptop:text-start laptop:text-2xl smartphone:text-xl smartphone:text-center">
                 <FormattedMessage 
                     id="about.description1"
                     defaultMessage="Hola, mi nombre es Brian Legal vivo en Buenos Aires, Argentina."

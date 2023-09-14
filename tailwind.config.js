@@ -13,8 +13,10 @@ module.exports = {
       'desktop': '1280px',
     },
     extend: {
-      skew: {
-        32: "32deg",
+      fontFamily: {
+        'handjet': ['Handjet'],
+        'teko': ['Teko'],
+        'yanone': ['Yanone Kaffeesatz'],
       },
       colors: {
         "negro": "rgba(0,0,0,1)",

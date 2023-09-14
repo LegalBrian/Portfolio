@@ -20,6 +20,21 @@ export const education = [
 
 export const workExperience = [
     {
+        company: "",
+        role: "Freelance Developer",
+        date: 
+            <FormattedMessage 
+                id="experienceList.workExperience.freelanceDeveloper.date" 
+                defaultMessage="ene 2023 - feb 2023 "
+            />,
+        description:
+            <FormattedMessage 
+                id="experienceList.workExperience.freelanceDeveloper.description" 
+                defaultMessage="Me encargo del desarrollo y estilización de páginas web y aplicaciones móviles. Trabajo directamente con los clientes para convertir sus ideas en algo real y funcional." 
+            />,
+        certificate: null,
+    },
+    {
         company: "Henry",
         role: "React Native Developer",
         date: 
@@ -30,8 +45,8 @@ export const workExperience = [
         description:
             <FormattedMessage 
                 id="experienceList.workExperience.ReactNativeDeveloper.description" 
-                defaultMessage="Desarrollé una aplicación móvil junto con un grupo de 7 personas para una ONG llamada 'Find a Home' (Encontrar un Hogar). El propósito de la aplicación es facilitar la adopción de animales que necesitan un hogar y permitir a los usuarios publicar sobre animales perdidos." 
+                defaultMessage="Desarrollé una aplicación móvil junto con un grupo de 7 personas para una ONG llamada 'Find a Home'. El propósito de la aplicación es facilitar la adopción de animales que necesitan un hogar y permitir a los usuarios publicar sobre animales perdidos." 
             />,
         certificate: null,
-    }
+    },
 ]

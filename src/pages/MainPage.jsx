@@ -9,7 +9,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const MainPage = () => {
     return(
-        <div className="flex flex-col gap-5 transition-all duration-500 bg-blanco text-negro dark:bg-azul-oscuro dark:text-blanco">
+        <div className="flex flex-col gap-5 transition-all duration-500 font-yanone bg-blanco text-negro dark:bg-azul-oscuro dark:text-blanco">
             <ScrollToTopButton/>
             <Header/>
             <Home/>

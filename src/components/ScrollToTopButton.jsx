@@ -15,7 +15,7 @@ const ScrollToTopButton = () => {
 
   const scrollToTop = () => {
     scroll.scrollToTop({
-      duration: 600,
+      duration: 100,
       smooth: 'easeInOutQuad'
     });
   };  
