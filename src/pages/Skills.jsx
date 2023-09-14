@@ -20,10 +20,6 @@ import { ReactComponent as Figma } from '../assets/svg/Figma.svg';
 import { ReactComponent as Excel } from '../assets/svg/Excel.svg';
 import { ReactComponent as Word } from '../assets/svg/Word.svg';
 
-export const skillsCategoryItemIcon = "w-[20px] h-[20px]";
-
-
-
 const Skills = () => {
     return (
         <div id="skills" className="flex flex-col justify-center items-center text-center">
