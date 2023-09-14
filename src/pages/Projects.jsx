@@ -5,7 +5,7 @@ import { FormattedMessage } from "react-intl";
 const Projects = () => {
     return (
         <div id="projects" className="flex flex-col text-center items-center">
-            <p className="desktop:text-4xl smartphone:text-3xl">
+            <p className="text-4xl">
                 <FormattedMessage 
                     id="projects.title" 
                     defaultMessage="Proyectos" 

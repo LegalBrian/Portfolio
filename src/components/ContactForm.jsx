@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   return (
     <form action="https://formsubmit.co/bfdc8398c85a9753d009bc77d90cffe0" method="POST" className="bg-element-light dark:bg-element-dark rounded-[10px] w-5/6 flex flex-col p-[20px] mt-[25px]">
-        <div className="grid grid-cols-2 p-[20px] gap-[20px] smartphone:grid-cols-1 smartphone-r:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2">
+        <div className="grid grid-cols-2 text-xl p-[20px] gap-[20px] smartphone:grid-cols-1 smartphone-r:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2">
             <div>
                 <div className="flex flex-col gap-[10px]">
                     <label htmlFor="nombre" className="flex text-start pl-[15px]">

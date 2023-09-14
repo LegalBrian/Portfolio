@@ -27,22 +27,20 @@ export const skillsCategoryItemIcon = "w-[20px] h-[20px]";
 const Skills = () => {
     return (
         <div id="skills" className="flex flex-col justify-center items-center text-center">
-            <p className="desktop:text-4xl smartphone:text-3xl">
+            <p className="text-4xl">
                 <FormattedMessage 
                     id="skills.title" 
                     defaultMessage="Habilidades" 
                 />
             </p>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center text-2xl">
                 <Carousel data={tech} />
-                <div className="grid items-start gap-5 p-5 desktop:grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 smartphone-r:grid-cols-2 smartphone:grid-cols-1">
+                <div className="grid items-start gap-10 p-5 desktop:grid-cols-4 laptop:grid-cols-3 tablet:grid-cols-3 smartphone-r:grid-cols-2 smartphone:grid-cols-1">
                     <div className="flex flex-col justify-center gap-[15px]">
-                        <p className="text-[20px]">
-                            <FormattedMessage 
-                                id="skills.categoryTitle1" 
-                                defaultMessage="Lenguajes de programación" 
-                            />
-                        </p>
+                        <FormattedMessage 
+                            id="skills.categoryTitle1" 
+                            defaultMessage="Lenguajes de programación" 
+                        />
                         <div className="text-start">
                             <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <JavaScript className="w-[20px] h-[20px]"/>
@@ -55,12 +53,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center gap-[15px]">
-                        <p className="text-[20px]">
-                            <FormattedMessage 
-                                id="skills.categoryTitle2" 
-                                defaultMessage="Entorno de ejecución" 
-                            />
-                        </p>
+                        <FormattedMessage 
+                            id="skills.categoryTitle2" 
+                            defaultMessage="Entorno de ejecución" 
+                        />
                         <div className="text-start">
                             <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <NodeJS className="w-[20px] h-[20px]"/>
@@ -69,12 +65,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center gap-[15px]">
-                        <p className="text-[20px]">
-                            <FormattedMessage 
-                                id="skills.categoryTitle3" 
-                                defaultMessage="Frameworks y librerías" 
-                            />
-                        </p>
+                        <FormattedMessage 
+                            id="skills.categoryTitle3" 
+                            defaultMessage="Frameworks y librerías" 
+                        />
                         <div className="text-start">
                             <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <React className="w-[20px] h-[20px]"/>
@@ -99,12 +93,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center gap-[15px]">
-                        <p className="text-[20px]">
-                            <FormattedMessage 
-                                id="skills.categoryTitle4" 
-                                defaultMessage="Bases de datos" 
-                            />
-                        </p>
+                        <FormattedMessage 
+                            id="skills.categoryTitle4" 
+                            defaultMessage="Bases de datos" 
+                        />
                         <div className="text-start">
                             <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <PostgreSQL className="w-[20px] h-[20px]"/>
@@ -117,12 +109,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center gap-[15px]">
-                        <p className="text-[20px]">
-                            <FormattedMessage 
-                                id="skills.categoryTitle5" 
-                                defaultMessage="Lenguajes de marcado y estilo" 
-                            />
-                        </p>
+                        <FormattedMessage 
+                            id="skills.categoryTitle5" 
+                            defaultMessage="Lenguajes de marcado y estilo" 
+                        />
                         <div className="text-start">
                             <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <HTML className="w-[20px] h-[20px]"/>
@@ -135,12 +125,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center gap-[15px]">
-                        <p className="text-[20px]">
-                            <FormattedMessage 
-                                id="skills.categoryTitle6" 
-                                defaultMessage="Control de versiones" 
-                            />
-                        </p>
+                        <FormattedMessage 
+                            id="skills.categoryTitle6" 
+                            defaultMessage="Control de versiones" 
+                        />
                         <div className="text-start">
                             <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Git className="w-[20px] h-[20px]"/>
@@ -153,12 +141,10 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center gap-5">
-                        <p className="text-xl">
-                            <FormattedMessage 
-                                id="skills.categoryTitle7" 
-                                defaultMessage="Herramientas adicionales" 
-                            />
-                        </p>
+                        <FormattedMessage 
+                            id="skills.categoryTitle7" 
+                            defaultMessage="Herramientas adicionales" 
+                        />
                         <div className="text-start">
                             <p className="border-y-[1px] pl-[20px] border-negro dark:border-blanco flex flex-row gap-[5px] py-[5px]">
                                 <Postman className="w-[20px] h-[20px]"/>

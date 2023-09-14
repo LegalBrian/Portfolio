@@ -14,11 +14,11 @@ const ProjectsCard = ({title, image, videoId, repo, deploy, technologies}) => {
                 className="desktop:h-[300px] desktop:w-[460px] smartphone:h-[150px] smartphone:w-[260px] smartphone-r:h-[150px] smartphone-r:w-[260px]"
             /> 
             }
-            <p className="text-center text-azul text-[25px]">{title}</p>
-            <div className="flex flex-wrap justify-center gap-[20px]">
+            <p className="text-center text-azul text-3xl">{title}</p>
+            <div className="flex flex-wrap justify-center gap-x-10 gap-4">
                 {technologies.map((ele, index) => {
                     return(
-                        <div key={index} className="flex flex-col items-center justify-center h-[60px] w-[80px]">
+                        <div key={index} className="flex flex-col items-center justify-center h-16 w-16">
                             {ele.svg}
                         </div>
                     )

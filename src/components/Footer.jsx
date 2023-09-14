@@ -8,7 +8,7 @@ const Footer = () => {
     const theme = useContext(themeContext)
     
     return (
-        <footer className="flex justify-center items-center py-6 bg-element-light dark:bg-element-dark">
+        <footer className="flex justify-center items-center text-xl py-6 bg-element-light dark:bg-element-dark">
             <a href="/" className="flex flex-col justify-center items-center gap-[20px]">
             {
                 theme.currentTheme === "dark" ?

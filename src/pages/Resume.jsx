@@ -8,7 +8,7 @@ import Button from "../components/Button";
 const Resume = () => {
     return (
         <div id="resume" className="flex flex-col items-center text-center">
-            <p className="desktop:text-4xl smartphone:text-3xl">
+            <p className="text-4xl">
                 <FormattedMessage 
                     id="resume.title" 
                     defaultMessage="Curriculum" 
@@ -16,7 +16,7 @@ const Resume = () => {
             </p>
             <div className="desktop:grid grid-cols-2 justify-items-center gap-x-16 smartphone:flex flex-col tablet:grid">
                 <div className="flex flex-col gap-5 smartphone:my-5">
-                    <p className="text-xl">
+                    <p className="text-2xl">
                         <FormattedMessage 
                             id="resume.education" 
                             defaultMessage="Educación" 
@@ -31,7 +31,7 @@ const Resume = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-5 smartphone:my-5">
-                    <p className="text-xl">
+                    <p className="text-2xl">
                         <FormattedMessage 
                             id="resume.workExperience" 
                             defaultMessage="Experiencia Laboral" 

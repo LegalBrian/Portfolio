@@ -10,13 +10,13 @@ import Button from '../components/Button';
 const Contact = () => {
     return (
         <div id="contact" className="flex flex-col justify-center items-center text-center gap-5">
-            <h2 className="desktop:text-4xl smartphone:text-3xl">
+            <h2 className="text-4xl">
                 <FormattedMessage 
                     id="contact.title" 
                     defaultMessage="Contacto" 
                 />
             </h2>
-            <p className="text-xl mx-10">
+            <p className="text-2xl px-5">
                 <FormattedMessage 
                     id="contact.description" 
                     defaultMessage="Si estás interesado en mi trabajo y te gustaría discutir una posible colaboración, no dudes en visitar mis perfiles profesionales en LinkedIn y GitHub para obtener más información sobre mi experiencia y habilidades. También puedes contactarme por correo electrónico o WhatsApp para hablar sobre un proyecto o una oportunidad laboral. ¡Espero tener noticias tuyas pronto y trabajar juntos en el futuro!" 
