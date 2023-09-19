@@ -7,10 +7,11 @@ import { ReactComponent as PostgreSQL } from '../svg/PostgreSQL.svg';
 import { ReactComponent as MongoDB } from '../svg/MongoDB.svg';
 import { ReactComponent as HTML } from '../svg/HTML.svg';
 import { ReactComponent as CSS } from '../svg/CSS.svg';
+import { ReactComponent as Angular } from '../svg/Angular.svg';
+import { ReactComponent as TypeScript } from '../svg/Typescript.svg';
 
 export const projects = [
     {
-
     title: "Feliza", 
         image: "https://raw.githubusercontent.com/LegalBrian/Portfolio/main/src/assets/images/feliza.png",
         videoId: "",
@@ -83,7 +84,7 @@ export const projects = [
     {
         title: "Pokedex", 
         image: "https://raw.githubusercontent.com/LegalBrian/Portfolio/main/src/assets/images/pokedex-project.png",
-        videoId: null,
+        videoId: "",
         repo: "https://github.com/LegalBrian/Pokemon-PI", 
         deploy: "",
         technologies: [
@@ -106,6 +107,36 @@ export const projects = [
             {
                 svg: <JavaScript className={"w-[60px] h-[60px]"}/>,
                 text: "JavaScript",
+            },
+            {
+                svg: <Tailwind className={"w-[60px] h-[60px]"}/>,
+                text: "Tailwind",
+            },
+            {
+                svg: <HTML className={"w-[60px] h-[60px]"}/>,
+                text: "HTML",
+            },
+            {
+                svg: <CSS className={"w-[60px] h-[60px]"}/>,
+                text: "CSS",
+            },
+        ],
+    },
+    {
+        title: "Calculator Angular", 
+        image: "https://raw.githubusercontent.com/LegalBrian/Portfolio/main/src/assets/images/calculator-angular.png",
+        videoId: "",
+        repo: "https://github.com/LegalBrian/CalculatorAngular", 
+        deploy: "https://calculator-angular-legalbrian.vercel.app",
+        technologies: [
+
+            {
+                svg: <Angular className={"w-[60px] h-[60px]"}/>,
+                text: "Angular",
+            },
+            {
+                svg: <TypeScript className={"w-[60px] h-[60px]"}/>,
+                text: "TypeScript",
             },
             {
                 svg: <Tailwind className={"w-[60px] h-[60px]"}/>,
